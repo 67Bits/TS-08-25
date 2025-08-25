@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace GabrielBertasso.UI
+namespace Turret.UI
 {
     [ExecuteAlways]
     [RequireComponent(typeof(TextMeshProUGUI))]
