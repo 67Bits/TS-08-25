@@ -33,6 +33,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 94058118986962520, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 94058118986962520, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 94058118986962521, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
       propertyPath: m_Layer
@@ -128,6 +138,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 4823827030376870498, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153884768771701224, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5411866659445368802, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
       propertyPath: m_Layer
@@ -142,6 +162,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6385075329476707460, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6385075329476707460, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6481372326226742992, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
@@ -163,8 +193,36 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1277905888780190204, guid: 4f191075184f5c74399b102fb1e3c242, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4823827030376870498, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3069992228833612246}
   m_SourcePrefab: {fileID: 100100000, guid: 4f191075184f5c74399b102fb1e3c242, type: 3}
+--- !u!1 &2057597308470102866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4823827030376870498, guid: 4f191075184f5c74399b102fb1e3c242,
+    type: 3}
+  m_PrefabInstance: {fileID: 6809338156901693744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3069992228833612246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057597308470102866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d33267cbf7c2884408ea3a678ccd7011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+  moveSpeed: 5
+  turnSpeed: 5
+  minOrbitRadius: 5
+  maxOrbitRadius: 7
