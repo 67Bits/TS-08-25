@@ -231,11 +231,14 @@ namespace SSB.Spawner
         {
             if (_useRadius)
             {
-                var point = Random.onUnitSphere * _AreaRadius;
-                return point;
+                float angle = Random.Range(0f, Mathf.PI * 2f); // random angle in radians
+                float x = Mathf.Cos(angle) * _AreaRadius;
+                float z = Mathf.Sin(angle) * _AreaRadius;
+                return new Vector3(x, 0f, z); // y = 0, circle on XZ plane
             }
             return Vector3.zero;
         }
+
         #endregion
         protected virtual void OnDrawGizmos()
         {

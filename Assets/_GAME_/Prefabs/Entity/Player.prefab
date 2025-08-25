@@ -60,7 +60,19 @@ MonoBehaviour:
       m_Calls: []
   OnDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4823827030376870498}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &5153884768771701224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91,6 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8684220441449982602}
+  - component: {fileID: 1277905888780190204}
   m_Layer: 3
   m_Name: TurretStack
   m_TagString: Untagged
@@ -107,12 +120,29 @@ Transform:
   m_GameObject: {fileID: 5849994014601540981}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3824118088083931290}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1277905888780190204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849994014601540981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a722a27877b140b448718af223f76f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stackDirection: {x: 0, y: 1, z: 0}
+  stackOffset: 1
+  maxTurrets: 5
+  TurretOptions:
+  - {fileID: 4880425141497886922, guid: b69ff8ba47bd87946b858663eabcefd6, type: 3}
 --- !u!1 &5957637816901473350
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +183,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5957637816901473350}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2401575438722283394
 MeshRenderer:
   m_ObjectHideFlags: 0
