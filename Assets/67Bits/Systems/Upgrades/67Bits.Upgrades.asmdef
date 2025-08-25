@@ -1,0 +1,17 @@
+{
+    "name": "67Bits.Upgrades",
+    "rootNamespace": "",
+    "references": [
+        "GUID:70276ac0bac088a4ab1865a3b6b58bdf",
+        "GUID:969c6e9f4c30ab14d87f44bcf8acb9da"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

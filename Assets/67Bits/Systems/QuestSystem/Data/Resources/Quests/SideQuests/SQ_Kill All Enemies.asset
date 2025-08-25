@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb9d7994f0cf194f857cd5e9d8dc494, type: 3}
+  m_Name: SQ_Kill All Enemies
+  m_EditorClassIdentifier: 
+  Title: Kill All Enemies
+  Icon: {fileID: 21300000, guid: f24f90e047e2d4873b3288c89a58d3f7, type: 3}
+  <Id>k__BackingField: 21b808ae-1d21-43c5-9683-9e3a49857978
+  <QuestType>k__BackingField: 1
+  <LinkedQuests>k__BackingField:
+  - {fileID: 11400000, guid: 3a1153fa402e07b4798193073ebc6868, type: 2}
+  - {fileID: 11400000, guid: f139105407a1fab4ab2e4e0f83a68740, type: 2}
+  <FollowLinkListOrder>k__BackingField: 1
+  <ShowInUI>k__BackingField: 0
+  <Objective>k__BackingField: {fileID: 11400000, guid: 813708d7d9df98c40ab3933471275c12,
+    type: 2}
+  <CurrentValue>k__BackingField: 2
+  <TotalValue>k__BackingField: 2
+  <Status>k__BackingField: 4
+  <RewardStatus>k__BackingField: 2
+  Description: 
+  <SaveOnAnyProgress>k__BackingField: 1
+  <RequireActivateToComplete>k__BackingField: 0
+  <FocusOnObjective>k__BackingField: 1
+  <FocusOnProgression>k__BackingField: 0
+  <HasDeliverTarget>k__BackingField: 1
+  <AutoFocusOnDeliver>k__BackingField: 0
+  DeliverTarget: {fileID: 0}
+  <AutoClaimReward>k__BackingField: 0
+  <Rewards>k__BackingField:
+  - Icon: {fileID: 21300000, guid: 45505ae0b73654561a68b0bc7708c585, type: 3}
+    Reward: {fileID: 11400000, guid: 3411a65d9b4129c48883f54d8f5a9f28, type: 2}
+    Ammount: 15
+  - Icon: {fileID: 21300000, guid: 45505ae0b73654561a68b0bc7708c585, type: 3}
+    Reward: {fileID: 11400000, guid: 3411a65d9b4129c48883f54d8f5a9f28, type: 2}
+    Ammount: 15
+  - Icon: {fileID: 21300000, guid: 45505ae0b73654561a68b0bc7708c585, type: 3}
+    Reward: {fileID: 11400000, guid: 3411a65d9b4129c48883f54d8f5a9f28, type: 2}
+    Ammount: 15
+  _eventsCount: 1
+  IsDisable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUpdateProgression:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAvaliable:
+    m_PersistentCalls:
+      m_Calls: []
+  IsAvaliable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnActive:
+    m_PersistentCalls:
+      m_Calls: []
+  IsActive:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFail:
+    m_PersistentCalls:
+      m_Calls: []
+  IsFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e77bb2ed56fee0f48a4aad48b7438bcc, type: 2}
+        m_TargetAssemblyTypeName: SSB.Quests.Quest, 67Bits.Quest
+        m_MethodName: UpdateProgression
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  IsRewardReady:
+    m_PersistentCalls:
+      m_Calls: []
+  OnClaimReward:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFocus:
+    m_PersistentCalls:
+      m_Calls: []

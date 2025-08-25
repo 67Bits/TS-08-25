@@ -1,0 +1,45 @@
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
+
+public class PauseToggle : MonoBehaviour
+{
+    [SerializeField] private UnityEvent pauseUnityEvent;
+    [SerializeField] private UnityEvent unpauseUnityEvent;
+    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private Button pauseButton;
+    [SerializeField] private Button continueButton;
+
+    private void OnEnable()
+    {
+        pauseButton.onClick.AddListener(() => SetPause(true));
+        continueButton.onClick.AddListener(() => SetPause(false));
+    }
+
+    private void OnDisable()
+    {
+        pauseButton.onClick.RemoveAllListeners();
+        continueButton.onClick.RemoveAllListeners();
+    }
+
+    public void SetPause(bool pausing)
+    {
+        if (pausing)
+        {
+            TimeManager.SetIsPaused(true);
+            pauseMenu.SetActive(true);
+            continueButton.interactable = true;
+            pauseButton.interactable = false;
+
+            pauseUnityEvent.Invoke();
+        }
+        else
+        {
+            TimeManager.SetIsPaused(false);
+            pauseButton.interactable = true;
+            continueButton.interactable = false;
+
+            unpauseUnityEvent.Invoke();
+        }
+    }
+}

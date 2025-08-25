@@ -1,0 +1,20 @@
+{
+    "name": "67Bits.Drops",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c15aee9b441ae9742a3b664a856cbd17",
+        "GUID:da7edc441719ebb469e245d1e9d53fca",
+        "GUID:969c6e9f4c30ab14d87f44bcf8acb9da",
+        "GUID:70276ac0bac088a4ab1865a3b6b58bdf",
+        "GUID:288bae472fe969842987d22783200f0a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

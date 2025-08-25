@@ -1,0 +1,17 @@
+{
+    "name": "67Bits.FeelExample",
+    "rootNamespace": "SSB.FeelExample",
+    "references": [
+        "GUID:4a1cb1490dc4df8409b2580d6b44e75e",
+        "GUID:21fddbfed3e80484a864bc9a708ea23c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

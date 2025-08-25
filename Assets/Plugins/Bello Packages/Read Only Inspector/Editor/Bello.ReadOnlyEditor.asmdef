@@ -1,0 +1,18 @@
+{
+    "name": "Bello.ReadOnlyEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:39075d0cb600e2d4a8f034a92d5ec9b5"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

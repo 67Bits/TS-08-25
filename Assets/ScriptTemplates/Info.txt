@@ -1,0 +1,8 @@
+Script templates Location:
+* Pay attention to the folder name [Unity Version]
+C:\Program Files\Unity\Hub\Editor\[Unity Verson]\Editor\Data\Resources\ScriptTemplates\
+
+Naming Convention:
+In different Unity versions, the number before each script template might change.
+For example, in 2022.3, the NewBehaviourScript starts with 81,
+while in Unity 6.0, it starts with 01.

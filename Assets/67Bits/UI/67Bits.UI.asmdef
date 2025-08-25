@@ -1,0 +1,24 @@
+{
+    "name": "67Bits.UI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4a1cb1490dc4df8409b2580d6b44e75e",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:39075d0cb600e2d4a8f034a92d5ec9b5",
+        "GUID:c15aee9b441ae9742a3b664a856cbd17",
+        "GUID:09dcc9c0126b6b34ab2a877b8f2277f5",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:3d497178329f977408c70fd8ad2021dd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

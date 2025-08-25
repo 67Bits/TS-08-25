@@ -1,0 +1,21 @@
+{
+    "name": "67Bits.RoadMap",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:fd06b6b5afb19c74c8ea3e2b2a3eeb0f",
+        "GUID:16a24d358852bbe4785c37148f8005ab",
+        "GUID:969c6e9f4c30ab14d87f44bcf8acb9da",
+        "GUID:4a1cb1490dc4df8409b2580d6b44e75e",
+        "GUID:70276ac0bac088a4ab1865a3b6b58bdf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

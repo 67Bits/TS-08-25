@@ -1,0 +1,19 @@
+{
+    "name": "67Bits.Spawner",
+    "rootNamespace": "SSB.Spawner",
+    "references": [
+        "GUID:288bae472fe969842987d22783200f0a",
+        "GUID:21fddbfed3e80484a864bc9a708ea23c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Sirenix.OdinInspector.Attributes.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

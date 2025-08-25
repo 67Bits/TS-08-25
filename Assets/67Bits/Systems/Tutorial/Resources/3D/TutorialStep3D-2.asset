@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ccab4d10512d74fb857c679771fc95, type: 3}
+  m_Name: TutorialStep3D-2
+  m_EditorClassIdentifier: 
+  _status: 0
+  _description: Triggers  when player enters trigger 1 and completes when player
+    enter trigger 2
+  _debugLogs: 0
+  _canBeForcedAll: 0
+  _canBeForcedEnabled: 0
+  _requireEnableToComplete: 0
+  OnEnable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDisable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnComplete:
+    m_PersistentCalls:
+      m_Calls: []

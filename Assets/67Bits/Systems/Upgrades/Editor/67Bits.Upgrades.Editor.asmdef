@@ -1,0 +1,19 @@
+{
+    "name": "67Bits.Upgrades.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fd06b6b5afb19c74c8ea3e2b2a3eeb0f",
+        "GUID:70276ac0bac088a4ab1865a3b6b58bdf"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

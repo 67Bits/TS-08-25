@@ -1,0 +1,20 @@
+{
+    "name": "67Bits.Drops.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c15aee9b441ae9742a3b664a856cbd17",
+        "GUID:da7edc441719ebb469e245d1e9d53fca",
+        "GUID:ac60237b0b0c284449f98f097f31449a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

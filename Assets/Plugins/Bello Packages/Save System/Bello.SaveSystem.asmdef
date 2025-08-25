@@ -1,0 +1,16 @@
+{
+    "name": "Bello.SaveSystem",
+    "rootNamespace": "",
+    "references": [
+        "GUID:288bae472fe969842987d22783200f0a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

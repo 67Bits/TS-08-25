@@ -1,0 +1,26 @@
+{
+    "name": "67Bits.Inventory",
+    "rootNamespace": "",
+    "references": [
+        "GUID:70276ac0bac088a4ab1865a3b6b58bdf",
+        "GUID:25557018178600f4cb9454c59a1caa00",
+        "GUID:21fddbfed3e80484a864bc9a708ea23c",
+        "GUID:fb24642277b1db2449da7ac148ce939d",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:29492541a59d04a81b47a7f225e8a22d",
+        "GUID:14165214884ae4a619bfb290f28194a7",
+        "GUID:c38f810c52ca79d4c912db7ef8176af5",
+        "GUID:288bae472fe969842987d22783200f0a",
+        "GUID:4eb5c1b8b06f7e741911a6b62c7d210c",
+        "GUID:39075d0cb600e2d4a8f034a92d5ec9b5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

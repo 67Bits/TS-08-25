@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb9d7994f0cf194f857cd5e9d8dc494, type: 3}
+  m_Name: Q2_Go To The NPC
+  m_EditorClassIdentifier: 
+  Title: Go To The NPC
+  Icon: {fileID: 21300000, guid: 9835a1cf96aba4ca1bc81c41c05a8458, type: 3}
+  <Id>k__BackingField: a2f33e97-353c-4496-860f-afa658a0ca43
+  <QuestType>k__BackingField: 0
+  <LinkedQuests>k__BackingField: []
+  <FollowLinkListOrder>k__BackingField: 0
+  <ShowInUI>k__BackingField: 0
+  <Objective>k__BackingField: {fileID: 11400000, guid: 7e7e3371536de7348948b2f7bd14da1b,
+    type: 2}
+  <CurrentValue>k__BackingField: 0
+  <TotalValue>k__BackingField: 1
+  <Status>k__BackingField: 0
+  <RewardStatus>k__BackingField: 0
+  Description: Go To The NPC
+  <SaveOnAnyProgress>k__BackingField: 1
+  <RequireActivateToComplete>k__BackingField: 0
+  <FocusOnObjective>k__BackingField: 1
+  <FocusOnProgression>k__BackingField: 1
+  <HasDeliverTarget>k__BackingField: 0
+  <AutoFocusOnDeliver>k__BackingField: 0
+  DeliverTarget: {fileID: 0}
+  <AutoClaimReward>k__BackingField: 0
+  <Rewards>k__BackingField: []
+  _eventsCount: 1
+  IsDisable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUpdateProgression:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAvaliable:
+    m_PersistentCalls:
+      m_Calls: []
+  IsAvaliable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnActive:
+    m_PersistentCalls:
+      m_Calls: []
+  IsActive:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFail:
+    m_PersistentCalls:
+      m_Calls: []
+  IsFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 053c3e8a59184f648a35f32e7524f833, type: 2}
+        m_TargetAssemblyTypeName: SSB.Quests.Quest, 67Bits.Quest
+        m_MethodName: SetAvaliable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  IsRewardReady:
+    m_PersistentCalls:
+      m_Calls: []
+  OnClaimReward:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFocus:
+    m_PersistentCalls:
+      m_Calls: []

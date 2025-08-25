@@ -1,0 +1,18 @@
+{
+    "name": "Bello.TagSelectorEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a106226db94060445b4ef101f9f71d7e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

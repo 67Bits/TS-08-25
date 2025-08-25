@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb9d7994f0cf194f857cd5e9d8dc494, type: 3}
+  m_Name: SQ3_Collect More Coins
+  m_EditorClassIdentifier: 
+  Title: Collect More Coins
+  Icon: {fileID: 21300000, guid: cf82b050240a44b748aec03845a7e4e2, type: 3}
+  <Id>k__BackingField: d70b429d-209d-4ed9-8dff-1a920d6b69a3
+  <QuestType>k__BackingField: 0
+  <LinkedQuests>k__BackingField:
+  - {fileID: 11400000, guid: ac80be0fb540afd4db363f450aaa76e1, type: 2}
+  - {fileID: 11400000, guid: e9c7d78db8d5bbe40a478f4a92fd51ab, type: 2}
+  <FollowLinkListOrder>k__BackingField: 0
+  <ShowInUI>k__BackingField: 0
+  <Objective>k__BackingField: {fileID: 11400000, guid: 53ef842849ea82d4fae731eecdb9592b,
+    type: 2}
+  <CurrentValue>k__BackingField: 0
+  <TotalValue>k__BackingField: 2
+  <Status>k__BackingField: 0
+  <RewardStatus>k__BackingField: 0
+  Description: There's just too mutch coins
+  <SaveOnAnyProgress>k__BackingField: 1
+  <RequireActivateToComplete>k__BackingField: 0
+  <FocusOnObjective>k__BackingField: 1
+  <FocusOnProgression>k__BackingField: 1
+  <HasDeliverTarget>k__BackingField: 1
+  <AutoFocusOnDeliver>k__BackingField: 0
+  DeliverTarget: {fileID: 0}
+  <AutoClaimReward>k__BackingField: 0
+  <Rewards>k__BackingField:
+  - Icon: {fileID: 21300000, guid: 45505ae0b73654561a68b0bc7708c585, type: 3}
+    Reward: {fileID: 11400000, guid: 975e435a299200d47ada7d055b202443, type: 2}
+    Ammount: 25
+  - Icon: {fileID: 21300000, guid: bb1a7614f9ed94b26b768e1f72508335, type: 3}
+    Reward: {fileID: 11400000, guid: 975e435a299200d47ada7d055b202443, type: 2}
+    Ammount: 10
+  _eventsCount: 0
+  IsDisable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUpdateProgression:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAvaliable:
+    m_PersistentCalls:
+      m_Calls: []
+  IsAvaliable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnActive:
+    m_PersistentCalls:
+      m_Calls: []
+  IsActive:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFail:
+    m_PersistentCalls:
+      m_Calls: []
+  IsFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  IsComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  IsRewardReady:
+    m_PersistentCalls:
+      m_Calls: []
+  OnClaimReward:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFocus:
+    m_PersistentCalls:
+      m_Calls: []

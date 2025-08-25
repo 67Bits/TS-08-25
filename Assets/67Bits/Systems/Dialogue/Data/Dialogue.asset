@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7662dbfb6be9a41b1cdec53bd8c1a0, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  Sentences:
+  - UseActor: 1
+    Actor: {fileID: 2559284490702282113, guid: 1443cdcd53c39cd4592326b54972b52c, type: 3}
+    StaticAnimation: Idle
+    TalkingAnimation: Talk
+    Text: Welcome to <wiggle a=.1 f=2><color=blue>67Bits</color></wiggle> Dialogue
+      System
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnFinish:
+      m_PersistentCalls:
+        m_Calls: []
+  - UseActor: 1
+    Actor: {fileID: 2559284490702282113, guid: 1443cdcd53c39cd4592326b54972b52c, type: 3}
+    StaticAnimation: Idle
+    TalkingAnimation: Talk
+    Text: Here you can create <shake a=1 f=2><color=red>any</color></shake> type
+      of dialogue for your game!
+    OnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    OnFinish:
+      m_PersistentCalls:
+        m_Calls: []

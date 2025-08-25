@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8b76ee30e47d4590de7958419810c, type: 3}
+  m_Name: ItemCatalog
+  m_EditorClassIdentifier: 
+  _dataList:
+  - enumKey: Gold
+    Type: 0
+    UIData:
+      _name: Gold
+      _sprite: {fileID: 21300000, guid: 33effd6735e414dc7b70ded5e8bb47f8, type: 3}
+      _relatedColor: {r: 0.9960785, g: 0.8431373, b: 0.03529412, a: 1}
+      _isInitiallyVisible: 1
+  - enumKey: Gem
+    Type: 1
+    UIData:
+      _name: Gem
+      _sprite: {fileID: 21300000, guid: 047acbbc02e094090ab6852579e7e7b7, type: 3}
+      _relatedColor: {r: 0.82745105, g: 0.45098042, b: 0.9686275, a: 1}
+      _isInitiallyVisible: 0
+  - enumKey: Energy
+    Type: 2
+    UIData:
+      _name: Energy
+      _sprite: {fileID: 21300000, guid: 686d826a2e5a44c8394898703ffb350e, type: 3}
+      _relatedColor: {r: 0.2509804, g: 0.93725497, b: 1, a: 1}
+      _isInitiallyVisible: 0

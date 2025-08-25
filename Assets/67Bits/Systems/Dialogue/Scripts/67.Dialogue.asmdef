@@ -1,0 +1,20 @@
+{
+    "name": "67.Dialogue",
+    "rootNamespace": "SSB.DialogueSystem",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:1e113d3b5d77bc04eab508251483e8ff",
+        "GUID:e539678cf69674b418d82e89c16a9753"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        ""
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

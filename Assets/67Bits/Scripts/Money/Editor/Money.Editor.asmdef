@@ -1,0 +1,19 @@
+{
+    "name": "Money.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:39c528cbdef8b4f409d32a732bbd748a",
+        "GUID:288bae472fe969842987d22783200f0a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

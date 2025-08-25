@@ -1,0 +1,19 @@
+{
+    "name": "67Bits.Perks",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:969c6e9f4c30ab14d87f44bcf8acb9da",
+        "GUID:288bae472fe969842987d22783200f0a",
+        "GUID:21fddbfed3e80484a864bc9a708ea23c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

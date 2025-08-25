@@ -1,0 +1,20 @@
+{
+    "name": "Bello.CharacterController",
+    "rootNamespace": "",
+    "references": [
+        "GUID:39075d0cb600e2d4a8f034a92d5ec9b5",
+        "GUID:a6f40c8245ba5e4409e7f9a76befa098",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:57f1d9622f63f8c459045acbe5d34fd0",
+        "GUID:288bae472fe969842987d22783200f0a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
