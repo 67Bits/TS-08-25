@@ -31,7 +31,9 @@ public class GameManager : Singleton<GameManager>
     public enum GameEvent
     {
         GameStart,
-        GameFinish,
+        ShopStart,
+        CombatStart,
+        CollectResourcesStart,
         GameFail,
         GameWin,
         GamePaused

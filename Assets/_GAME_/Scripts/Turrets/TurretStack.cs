@@ -1,10 +1,11 @@
-using NUnit.Framework;
+
 using System.Collections.Generic;
 using UnityEngine;
+using Bello;
 
 namespace Turret
 {
-    public class TurretStack : MonoBehaviour
+    public class TurretStack : Singleton<TurretStack>
     {
         [Header("Stack Settings")]
         [SerializeField] private Vector3 stackDirection = Vector3.up;

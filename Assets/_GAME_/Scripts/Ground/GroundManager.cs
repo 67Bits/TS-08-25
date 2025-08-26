@@ -30,6 +30,11 @@ namespace TS
             }
         }
 
+        public void SetMoveSpeed(float moveSpeed)
+        {
+            this.moveSpeed = moveSpeed;
+        }
+
         void Update()
         {
             // Move the parent backwards (moves all children together)

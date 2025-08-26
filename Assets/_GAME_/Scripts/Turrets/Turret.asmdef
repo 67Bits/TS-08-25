@@ -2,7 +2,8 @@
     "name": "Turret",
     "rootNamespace": "Turret",
     "references": [
-        "GUID:3745fbdb7fe789c42b912145dad11290"
+        "GUID:3745fbdb7fe789c42b912145dad11290",
+        "GUID:288bae472fe969842987d22783200f0a"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
