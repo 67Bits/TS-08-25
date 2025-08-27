@@ -52,7 +52,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TGR.ShopManager, TS
-          m_MethodName: ToggleStore
+          m_MethodName: StartShop
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -166,8 +166,83 @@ Transform:
   - {fileID: 3394726573172823905}
   - {fileID: 4571681610366343203}
   - {fileID: 3251716050354060029}
+  - {fileID: 63129096122855622}
   m_Father: {fileID: 7183852221956880782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3514660552698583633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63129096122855622}
+  - component: {fileID: 1229263800141584203}
+  m_Layer: 0
+  m_Name: ResourceStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &63129096122855622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3514660552698583633}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5816328896181116943}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1229263800141584203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3514660552698583633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86fce9c687e3e3a458e257e8c615bf42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvents:
+  - Name: CollectResourcesStart
+    eventType: 3
+    events:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TS.GroundManager, TS
+          m_MethodName: ActivateSpecialGround
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TS.GroundManager, TS
+          m_MethodName: SetMoveSpeed
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 5
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5100597194244198637
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3251716050354060029}
+  - component: {fileID: 1343457536847799912}
   m_Layer: 0
   m_Name: CombatStart
   m_TagString: Untagged
@@ -230,3 +306,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5816328896181116943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1343457536847799912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5203291863567057924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86fce9c687e3e3a458e257e8c615bf42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvents:
+  - Name: CombatStart
+    eventType: 2
+    events:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: SSB.Spawner.Spawner, 67Bits.Spawner
+          m_MethodName: BeginWave
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TS.GroundManager, TS
+          m_MethodName: SetMoveSpeed
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

@@ -14,7 +14,7 @@ namespace SSB.Spawner
         [SerializeField] private bool _usePool;
 
         [SerializeField, ReadOnly, HorizontalGroup, LabelWidth(85)]
-        private int _currentWave = 0;
+        private int _currentWave = -1;
         [SerializeField, ReadOnly, HorizontalGroup, LabelWidth(125)] private string _currentWaveName;
 
         [Header("Position Settings")]
@@ -39,6 +39,10 @@ namespace SSB.Spawner
         [Button]
         public void BeginWave()
         {
+            if (_currentWave >= 1)
+            {
+                BeginWave(_currentWave++);
+            }
             _currentWave = 1;
             BeginWave(Waves[0]);
         }
@@ -129,7 +133,7 @@ namespace SSB.Spawner
         [Button] public void NextWave() => BeginWave(_currentWave++);
         public void NextWave(bool stopCurrentWave)
         {
-            if (stopCurrentWave) StopWave(_currentWave);
+            if (stopCurrentWave && _currentWave < 0) StopWave(_currentWave);
             BeginWave(_currentWave++);
         }
         #endregion

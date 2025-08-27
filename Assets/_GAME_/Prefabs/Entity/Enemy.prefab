@@ -128,6 +128,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3883793042320119373, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4823827030376870498, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
       propertyPath: m_Name
@@ -226,3 +231,4 @@ MonoBehaviour:
   turnSpeed: 5
   minOrbitRadius: 5
   maxOrbitRadius: 7
+  orbitDirection: 1

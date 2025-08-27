@@ -1,18 +1,28 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace TS
 {
     public class GroundManager : MonoBehaviour
     {
         [Header("Ground Settings")]
+        public int spawnPerDestroy = 4;    // how many pieces to spawn when one is destroyed
+        public float despawnThreshold = -10f; // Z position to despawn pieces
         public List<Ground> groundPrefabs;   // list of possible prefabs
+        public List<Ground> groundSpecialPrefabs;   // list of possible prefabs
+        public int specialQnt = 7;
         public int initialPieces = 5;        // how many pieces in front
         public float moveSpeed = 5f;         // treadmill speed
         public Transform parent;             // parent to keep hierarchy clean
 
+        public UnityEvent OnEndSpecial;
+
         private Queue<Ground> activeGrounds = new Queue<Ground>();
         private float nextSpawnZ = 0f;       // local Z position for next piece
+
+        private bool specialNext = false;
+        private int currentSpecialCount = 0;
 
         void Start()
         {
@@ -35,6 +45,12 @@ namespace TS
             this.moveSpeed = moveSpeed;
         }
 
+        public void ActivateSpecialGround()
+        {
+            specialNext = true;
+            currentSpecialCount = specialQnt;
+        }
+
         void Update()
         {
             // Move the parent backwards (moves all children together)
@@ -48,14 +64,15 @@ namespace TS
                 // Convert local position to world position for checking
                 Vector3 worldPos = parent.TransformPoint(first.transform.localPosition);
 
-                if (worldPos.z + first.length < -20f) // despawn threshold
+                if (worldPos.z + first.length < despawnThreshold) // despawn threshold
                 {
                     // Remove old piece
                     Ground old = activeGrounds.Dequeue();
                     Destroy(old.gameObject);
 
                     // Spawn new one at the end
-                    SpawnGround();
+                    for (int i = 0; i < spawnPerDestroy; i ++)
+                        SpawnGround();
                 }
             }
         }
@@ -63,10 +80,26 @@ namespace TS
         private void SpawnGround()
         {
             // Pick a random prefab
-            Ground prefab = groundPrefabs[Random.Range(0, groundPrefabs.Count)];
+            Ground prefab;
 
-            // Spawn at local position relative to parent
-            Vector3 localSpawnPos = new Vector3(0f, 0f, nextSpawnZ);
+            if (specialNext)
+            {
+                prefab = groundSpecialPrefabs[Random.Range(0, groundSpecialPrefabs.Count)];
+                currentSpecialCount--;
+                if (currentSpecialCount <= 0)
+                {
+                    specialNext = false;
+                    OnEndSpecial.Invoke();
+                }
+
+            }
+            else
+            {
+                prefab = groundPrefabs[Random.Range(0, groundPrefabs.Count)];
+            }
+
+                // Spawn at local position relative to parent
+                Vector3 localSpawnPos = new Vector3(0f, 0f, nextSpawnZ);
 
             // Instantiate as child of parent with local position
             Ground newGround = Instantiate(prefab, parent);
