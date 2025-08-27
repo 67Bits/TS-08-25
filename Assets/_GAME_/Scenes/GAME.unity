@@ -369,63 +369,8 @@ MonoBehaviour:
     NextWaveOnFinish: 0
     StartDelay: 0
     Loop: 1
-    LoopAmmount: 1
-    Delay: 0
-    Duration: 0
-    Ammount: 0
-    AlwaysSpawn: 0
-    Spawns:
-    - Name: 
-      Prefab: {fileID: 2057597308470102866, guid: e20d7ac9bca29ae41aec5d9d5f3e5c1b,
-        type: 3}
-      TargetPoint: {fileID: 0}
-      SpawnAmmount: 3
-      SpawnChance: 100
-      OnSpawnCreated:
-        m_PersistentCalls:
-          m_Calls: []
-      OnSpawnDisabled:
-        m_PersistentCalls:
-          m_Calls: []
-    OnStartWave:
-      m_PersistentCalls:
-        m_Calls: []
-    OnStopWave:
-      m_PersistentCalls:
-        m_Calls: []
-    OnFinishWave:
-      m_PersistentCalls:
-        m_Calls: []
-    ClearPercentage: 100
-    _invokeMulitpleTimes: 0
-    OnWaveClear:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1497090230}
-          m_TargetAssemblyTypeName: GameEvents, 67Bits
-          m_MethodName: StartAllEventsTypes
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    SpawCount: 0
-    SpawCountTotal: 0
-    ElapsedTime: 0
-    Started: 0
-    Stopped: 0
-    Completed: 0
-  - Spawner: {fileID: 0}
-    Name: Wave
-    NextWaveOnFinish: 0
-    StartDelay: 0
-    Loop: 1
-    LoopAmmount: 10
-    Delay: 10
+    LoopAmmount: 3
+    Delay: 3
     Duration: 0
     Ammount: 0
     AlwaysSpawn: 0
@@ -435,61 +380,6 @@ MonoBehaviour:
         type: 3}
       TargetPoint: {fileID: 0}
       SpawnAmmount: 2
-      SpawnChance: 100
-      OnSpawnCreated:
-        m_PersistentCalls:
-          m_Calls: []
-      OnSpawnDisabled:
-        m_PersistentCalls:
-          m_Calls: []
-    OnStartWave:
-      m_PersistentCalls:
-        m_Calls: []
-    OnStopWave:
-      m_PersistentCalls:
-        m_Calls: []
-    OnFinishWave:
-      m_PersistentCalls:
-        m_Calls: []
-    ClearPercentage: 100
-    _invokeMulitpleTimes: 0
-    OnWaveClear:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1497090230}
-          m_TargetAssemblyTypeName: GameEvents, 67Bits
-          m_MethodName: StartAllEventsTypes
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    SpawCount: 0
-    SpawCountTotal: 0
-    ElapsedTime: 0
-    Started: 0
-    Stopped: 0
-    Completed: 0
-  - Spawner: {fileID: 0}
-    Name: Wave
-    NextWaveOnFinish: 0
-    StartDelay: 0
-    Loop: 1
-    LoopAmmount: 1
-    Delay: 0
-    Duration: 0
-    Ammount: 0
-    AlwaysSpawn: 0
-    Spawns:
-    - Name: 
-      Prefab: {fileID: 2057597308470102866, guid: e20d7ac9bca29ae41aec5d9d5f3e5c1b,
-        type: 3}
-      TargetPoint: {fileID: 0}
-      SpawnAmmount: 1
       SpawnChance: 100
       OnSpawnCreated:
         m_PersistentCalls:

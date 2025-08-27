@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentTarget: {fileID: 0}
-  _targetMode: 0
+  _targetMode: 3
   _detectRadius: 10
   _detectLayer:
     serializedVersion: 2

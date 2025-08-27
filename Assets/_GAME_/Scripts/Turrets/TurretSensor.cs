@@ -16,7 +16,8 @@ namespace Turret
         {
             Closest,
             Farthest,
-            Random
+            Random,
+            NotTargeted
         }
         [Header("Current Target")]
         [ReadOnly] public GameObject CurrentTarget;
@@ -134,8 +135,10 @@ namespace Turret
                 TargetMode.Closest => GetClosestTarget(detectableTargets),
                 TargetMode.Farthest => GetFarthestTarget(detectableTargets),
                 TargetMode.Random => GetRandomTarget(detectableTargets),
+                TargetMode.NotTargeted => GetTheNotTarget(detectableTargets),
                 _ => GetClosestTarget(detectableTargets)
             };
+
         }
 
         /// <summary>
@@ -188,6 +191,65 @@ namespace Turret
             int randomIndex = Random.Range(0, targets.Count);
             return targets[randomIndex];
         }
+
+        private GameObject GetTheNotTarget(List<GameObject> targets)
+        {
+            if (targets == null || targets.Count == 0)
+                return null;
+
+            // Keep current target if it's still valid
+            if (CurrentTarget != null && CurrentTarget.activeSelf)
+            {
+                if (CurrentTarget.TryGetComponent<Health>(out var currentHealth) && currentHealth.CurrentHealth > 0 &&
+                    CurrentTarget.TryGetComponent<TurretTarget>(out var currentTarget) && currentTarget.IsTargeted(this)
+                    )
+                    return CurrentTarget;
+            }
+
+            // Collect valid candidates
+            List<GameObject> validTargets = new List<GameObject>();
+            foreach (var go in targets)
+            {
+                if (go == null || !go.activeSelf) continue;
+                if (go.TryGetComponent<Health>(out var health) && health.CurrentHealth <= 0) continue;
+
+                validTargets.Add(go);
+            }
+
+            if (validTargets.Count == 0)
+                return null;
+
+            // Prefer untargeted enemy
+            foreach (var go in validTargets)
+            {
+                TurretTarget t = go.GetComponent<TurretTarget>();
+                if (t != null && !t.IsTargeted())
+                {
+                    CurrentTarget = go;
+                    t.SetTargetBy(this);
+                    return go;
+                }
+            }
+
+            // If already has a target, keep it
+            if (CurrentTarget != null)
+            {
+                if (CurrentTarget.activeSelf)
+                    return CurrentTarget;
+            }
+
+
+            // If all are already targeted, just pick a random one
+            GameObject randomTarget = validTargets[Random.Range(0, validTargets.Count)];
+            CurrentTarget = randomTarget;
+            //randomTarget.GetComponent<TurretTarget>()?.SetTargetBy(this);
+
+            return randomTarget;
+        }
+
+
+
+
 
         /// <summary>
         /// Checks if a target is within the detection angle
