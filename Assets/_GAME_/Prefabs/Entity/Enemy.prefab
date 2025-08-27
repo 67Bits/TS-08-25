@@ -56,7 +56,7 @@ PrefabInstance:
     - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
       propertyPath: _debugStartHealth
-      value: 50
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 2401575438722283394, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
@@ -207,6 +207,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3069992228833612246}
+    - targetCorrespondingSourceObject: {fileID: 4823827030376870498, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7982691697205635195}
   m_SourcePrefab: {fileID: 100100000, guid: 4f191075184f5c74399b102fb1e3c242, type: 3}
 --- !u!1 &2057597308470102866 stripped
 GameObject:
@@ -226,9 +230,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33267cbf7c2884408ea3a678ccd7011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
-  moveSpeed: 5
-  turnSpeed: 5
-  minOrbitRadius: 5
-  maxOrbitRadius: 7
-  orbitDirection: 1
+  agent: {fileID: 7982691697205635195}
+--- !u!195 &7982691697205635195
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057597308470102866}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 9
+  m_Acceleration: 10
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 1
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

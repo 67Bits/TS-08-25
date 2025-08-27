@@ -39,10 +39,6 @@ namespace SSB.Spawner
         [Button]
         public void BeginWave()
         {
-            if (_currentWave >= 1)
-            {
-                BeginWave(_currentWave++);
-            }
             _currentWave = 1;
             BeginWave(Waves[0]);
         }
