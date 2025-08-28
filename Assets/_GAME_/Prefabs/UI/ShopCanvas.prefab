@@ -76,6 +76,7 @@ MonoBehaviour:
   optionsLimit: 2
   options:
   - {fileID: 11400000, guid: 8b0de2d0b314f834eb53687c8f9092db, type: 2}
+  - {fileID: 11400000, guid: 15fd8bdda9e3ca64fbdb167fc9336d65, type: 2}
   itemsParent: {fileID: 8206606136604329202}
   storeTab: {fileID: 8196450524577575616}
   itemPrefab: {fileID: 8730581831415442588, guid: 5915febdec627ee4db68df8bc7f3947e,
