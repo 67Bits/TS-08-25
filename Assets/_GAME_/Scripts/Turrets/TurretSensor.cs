@@ -195,57 +195,75 @@ namespace Turret
         private GameObject GetTheNotTarget(List<GameObject> targets)
         {
             if (targets == null || targets.Count == 0)
-                return null;
+                return CurrentTarget; // keep what we have
 
-            // Keep current target if it's still valid
-            if (CurrentTarget != null && CurrentTarget.activeSelf)
+            if (CurrentTarget && !CurrentTarget.activeSelf)
             {
-                if (CurrentTarget.TryGetComponent<Health>(out var currentHealth) && currentHealth.CurrentHealth > 0 &&
-                    CurrentTarget.TryGetComponent<TurretTarget>(out var currentTarget) && currentTarget.IsTargeted(this)
-                    )
-                    return CurrentTarget;
+                CurrentTarget = null;
             }
 
             // Collect valid candidates
-            List<GameObject> validTargets = new List<GameObject>();
+            List<TurretTarget> validTargetsNotTargeted = new List<TurretTarget>();
+            List<TurretTarget> validTargetsDirty = new List<TurretTarget>();
+
             foreach (var go in targets)
             {
                 if (go == null || !go.activeSelf) continue;
                 if (go.TryGetComponent<Health>(out var health) && health.CurrentHealth <= 0) continue;
 
-                validTargets.Add(go);
-            }
-
-            if (validTargets.Count == 0)
-                return null;
-
-            // Prefer untargeted enemy
-            foreach (var go in validTargets)
-            {
-                TurretTarget t = go.GetComponent<TurretTarget>();
-                if (t != null && !t.IsTargeted())
+                if (go.TryGetComponent<TurretTarget>(out var turretTarget))
                 {
-                    CurrentTarget = go;
-                    t.SetTargetBy(this);
-                    return go;
+                    if (!turretTarget.IsTargeted())
+                        validTargetsNotTargeted.Add(turretTarget);
+                    else
+                        validTargetsDirty.Add(turretTarget);
                 }
             }
 
-            // If already has a target, keep it
+            // Case 1: we already have a target
             if (CurrentTarget != null)
             {
-                if (CurrentTarget.activeSelf)
+                if (CurrentTarget.TryGetComponent<TurretTarget>(out var currentTurretTarget))
+                {
+                    // If still targeted by me, keep it
+                    if (currentTurretTarget.IsTargeted(this))
+                        return CurrentTarget;
+
+                    // Otherwise, try to replace it with a free one
+                    if (validTargetsNotTargeted.Count > 0)
+                    {
+                        var vt = validTargetsNotTargeted[0]; // could randomize
+                        CurrentTarget = vt.gameObject;
+                        vt.SetTargetBy(this);
+                        return CurrentTarget;
+                    }
+
+                    // No free ones, stick to the old one
                     return CurrentTarget;
+                }
             }
 
+            // Case 2: no current target yet
+            if (validTargetsNotTargeted.Count > 0)
+            {
+                var vt = validTargetsNotTargeted[0];
+                CurrentTarget = vt.gameObject;
+                vt.SetTargetBy(this);
+                return CurrentTarget;
+            }
 
-            // If all are already targeted, just pick a random one
-            GameObject randomTarget = validTargets[Random.Range(0, validTargets.Count)];
-            CurrentTarget = randomTarget;
-            //randomTarget.GetComponent<TurretTarget>()?.SetTargetBy(this);
+            if (validTargetsDirty.Count > 0)
+            {
+                var vt = validTargetsDirty[Random.Range(0, validTargetsDirty.Count)];
+                CurrentTarget = vt.gameObject;
+                // Already targeted, no SetTargetBy
+                return CurrentTarget;
+            }
 
-            return randomTarget;
+            return CurrentTarget; // fallback to keeping whatever was there (even if null)
         }
+
+
 
 
 

@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a97b3137324d64b85c119089a1d51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootInterval: 0.2
+  attackInterval: 0.3
   damage: 10
   sensor: {fileID: 4880425141497886922}
   shootPoint: {fileID: 8340805409041754697}

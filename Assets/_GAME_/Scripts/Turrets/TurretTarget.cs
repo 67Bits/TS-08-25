@@ -5,16 +5,14 @@ namespace Turret
 {
     public class TurretTarget : MonoBehaviour
     {
-        private TurretSensor turretTargetBy;
+        [SerializeField] private TurretSensor turretTargetBy;
 
         public void SetTargetBy(TurretSensor turretSensor)
         {
-            if (turretTargetBy != null)
+            if (turretTargetBy == null)
             {
-                RemoveTargetBy();
+                turretTargetBy = turretSensor;
             }
-
-            turretTargetBy = turretSensor;
         }
 
         public void RemoveTargetBy()
@@ -29,7 +27,7 @@ namespace Turret
         
         public bool IsTargeted(TurretSensor sensor)
         {
-            return turretTargetBy != sensor;
+            return turretTargetBy == sensor;
         }
     }
 }

@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackInterval: 0.3
-  damage: 10
+  damage: 30
   sensor: {fileID: 8243849093003104868}
   shootPoint: {fileID: 4761069583159951591}
   damageCollider: {fileID: 4268675278596374491}
