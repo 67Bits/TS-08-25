@@ -369,14 +369,14 @@ MonoBehaviour:
     NextWaveOnFinish: 0
     StartDelay: 0
     Loop: 1
-    LoopAmmount: 3
-    Delay: 3
+    LoopAmmount: 2
+    Delay: 6
     Duration: 0
     Ammount: 0
     AlwaysSpawn: 0
     Spawns:
     - Name: 
-      Prefab: {fileID: 2057597308470102866, guid: e20d7ac9bca29ae41aec5d9d5f3e5c1b,
+      Prefab: {fileID: 4823827030376870498, guid: 8b08544029711484e92d959f0d9662f8,
         type: 3}
       TargetPoint: {fileID: 0}
       SpawnAmmount: 2

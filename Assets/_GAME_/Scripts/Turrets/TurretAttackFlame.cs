@@ -16,7 +16,7 @@ namespace Turret
             {
                 damageCollider.SetDamage(damage);
                 col = damageCollider.GetComponent<Collider>();
-                col.enabled = (false); // start disabled
+                col.enabled = false; // start disabled
             }
         }
 
@@ -30,9 +30,9 @@ namespace Turret
 
         private IEnumerator EnableColliderOneFrame()
         {
-            col.enabled = (true);
+            col.enabled = true;
             yield return null; // wait one frame
-            col.enabled = (false);
+            col.enabled = false;
         }
     }
 }

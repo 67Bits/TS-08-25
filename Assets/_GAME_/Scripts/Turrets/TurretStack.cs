@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Bello;
+using Sirenix.OdinInspector;
 
 namespace Turret
 {
@@ -11,12 +12,14 @@ namespace Turret
         [SerializeField] private Vector3 stackDirection = Vector3.up;
         [SerializeField] private float stackOffset = 1f;
         [SerializeField] private int maxTurrets = 5;
+        [SerializeField] private Transform stackTop;
 
         [Header("Turret Options")]
         public List<TurretSensor> TurretOptions = new List<TurretSensor>();
 
         private Stack<TurretSensor> turretStack = new Stack<TurretSensor>();
 
+        [Button]
         public void AddTurret(TurretSensor turretSensor)
         {
             if (turretStack.Count >= maxTurrets)
@@ -25,19 +28,13 @@ namespace Turret
                 return;
             }
             var turret = Instantiate(turretSensor.gameObject, transform.position + stackDirection * stackOffset * turretStack.Count, Quaternion.identity, transform);
-            turretStack.Push(turret.GetComponent<TurretSensor>());
-        }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.T))
+            if (stackTop != null)
             {
-                if (TurretOptions.Count > 0)
-                {
-                    int randomIndex = Random.Range(0, TurretOptions.Count);
-                    AddTurret(TurretOptions[randomIndex]);
-                }
+                stackTop.localPosition = turret.transform.position + stackDirection * stackOffset;
             }
+
+            turretStack.Push(turret.GetComponent<TurretSensor>());
         }
     }
 }
