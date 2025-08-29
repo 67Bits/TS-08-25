@@ -8,9 +8,11 @@ namespace Turret
     public class TurretAttackShooter : TurretAttack
     {
         [SerializeField] private Bullet bulletPrefab;
+        [SerializeField] private UnityEvent OnAttack;
 
         protected override void Attack()
         {
+            OnAttack?.Invoke();
             Bullet bullet = Instantiate(bulletPrefab.gameObject, shootPoint.position, Quaternion.identity).GetComponent<Bullet>();
             UnityEvent onReachDestination = new UnityEvent();
 
