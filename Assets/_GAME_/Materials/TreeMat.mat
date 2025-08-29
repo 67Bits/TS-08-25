@@ -347,7 +347,7 @@ Material:
     - _NormalsUVType: 0
     - _OcclusionStrength: 1
     - _OutlineMode: 8
-    - _OutlineThickness: 10
+    - _OutlineThickness: 4
     - _OutlineType: 2
     - _OutlineWidth: 4
     - _Parallax: 0.005

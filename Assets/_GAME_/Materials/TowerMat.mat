@@ -25,6 +25,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - TCP2_RIM_LIGHTING
   - TCP2_UV_NORMALS_FULL
   m_InvalidKeywords:
   - _ALBEDOVERTEXCOLORMODE_REPLACE
@@ -357,8 +358,8 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _QueueOffset: 0
-    - _RampSmoothing: 0.13
-    - _RampThreshold: 0.5
+    - _RampSmoothing: 0.02
+    - _RampThreshold: 0.42
     - _RecalculateNormals: 0
     - _ReceiveShadows: 1
     - _ReceiveShadowsOff: 1
@@ -369,8 +370,8 @@ Material:
     - _RimAttenuation: 1
     - _RimLighting: 0
     - _RimLightingStage: 0
-    - _RimMax: 1
-    - _RimMin: 0.5
+    - _RimMax: 0.51
+    - _RimMin: 0.91
     - _SSSAtten: 1
     - _SSSFrontAtten: 0.3
     - _SSSFrontPower: 3
@@ -393,8 +394,8 @@ Material:
     - _SpecularHighlights: 1
     - _SpecularModel: 0
     - _SpecularToonCutoff: 0.35
-    - _SpecularToonSize: 0.25
-    - _SpecularToonSmoothness: 0.05
+    - _SpecularToonSize: 0.05
+    - _SpecularToonSmoothness: 0.001
     - _SpherizeNormals: 0
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
@@ -417,7 +418,7 @@ Material:
     - _TriplanarSharpness: 15
     - _UVDistortion: 0
     - _UseCustomTime: 0
-    - _UseRim: 0
+    - _UseRim: 1
     - _UseSpecular: 0
     - _UseVerticalMask: 1
     - _VertexColorBlending: 1
@@ -458,7 +459,7 @@ Material:
     - _GradientHeightColor01: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _GradientHeightColor02: {r: 1, g: 1, b: 1, a: 1}
     - _GreyscaleTintColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HColor: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
+    - _HColor: {r: 1, g: 1, b: 1, a: 1}
     - _HighlightOffset: {r: 0, g: 0, b: 0, a: 0}
     - _HighlightsColor: {r: 2, g: 2, b: 2, a: 1}
     - _HitColor: {r: 1, g: 1, b: 1, a: 1}
@@ -466,15 +467,15 @@ Material:
     - _HologramLineDirection: {r: 0, g: 1, b: 0, a: 0}
     - _OutlineColor: {r: 0.24856888, g: 0.8962264, b: 0.14796188, a: 1}
     - _OutlineColorVertex: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
-    - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+    - _RimColor: {r: 1, g: 0.9669811, b: 0.9669811, a: 0.5}
     - _RimDir: {r: 0, g: 0, b: 1, a: 1}
     - _RimOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _SColor: {r: 0.6203442, g: 0.36707902, b: 0.6886792, a: 1}
+    - _SColor: {r: 0.650365, g: 0.31287822, b: 0.745283, a: 1}
     - _SSSColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShakeMaxDisplacement: {r: 0.1, g: 0.1, b: 0.1, a: 0}
     - _ShakeSpeed: {r: 41, g: 49, b: 45, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SpecularColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _VertexDistortionNoiseSpeed: {r: 4, g: 4, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
