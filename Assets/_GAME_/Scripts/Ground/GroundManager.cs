@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -17,6 +18,8 @@ namespace TS
         public Transform parent;             // parent to keep hierarchy clean
 
         public UnityEvent OnEndSpecial;
+        public UnityEvent OnEndSpecialWithDelay;
+        [SerializeField] private float endSpecialDelay = 6f;
 
         private Queue<Ground> activeGrounds = new Queue<Ground>();
         private float nextSpawnZ = 0f;       // local Z position for next piece
@@ -90,6 +93,7 @@ namespace TS
                 {
                     specialNext = false;
                     OnEndSpecial.Invoke();
+                    StartCoroutine(OnEndSpecialGroundDelay(endSpecialDelay));
                 }
 
             }
@@ -110,6 +114,12 @@ namespace TS
             nextSpawnZ += newGround.length;
 
             activeGrounds.Enqueue(newGround);
+        }
+
+        private IEnumerator OnEndSpecialGroundDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            OnEndSpecialWithDelay.Invoke();
         }
     }
 }

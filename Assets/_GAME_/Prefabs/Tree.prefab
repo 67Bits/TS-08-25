@@ -76,7 +76,6 @@ GameObject:
   - component: {fileID: 3470403209072576810}
   - component: {fileID: 542264573507045007}
   - component: {fileID: 2333556785052021317}
-  - component: {fileID: 6820925790517429861}
   - component: {fileID: 6738552626125986535}
   - component: {fileID: 124723020548874732}
   m_Layer: 10
@@ -157,38 +156,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6820925790517429861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4279134296122708880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6abdd1ac271ca7b49aeba71943d5843b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resourceBullet: {fileID: 2189169309488628842, guid: 0e8052464939d9d42bedeae99486299a,
-    type: 3}
-  resourceCollectorLayer:
-    serializedVersion: 2
-    m_Bits: 2048
-  OnCollectResource:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4279134296122708880}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!136 &6738552626125986535
 CapsuleCollider:
   m_ObjectHideFlags: 0
