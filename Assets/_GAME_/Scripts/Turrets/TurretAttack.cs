@@ -13,7 +13,6 @@ namespace Turret
 
         [Header("References")]
         [SerializeField] protected TurretSensor sensor;
-        [SerializeField] protected Transform shootPoint;
 
         private float attackTimer = 0f;
 

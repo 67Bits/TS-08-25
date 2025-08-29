@@ -135,6 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceEndPoint: {fileID: 9216890363909490679}
+  OnConsumeResource:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4089559759791673533
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +163,38 @@ Transform:
   m_GameObject: {fileID: 4089559759791673533}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.207}
+  m_LocalPosition: {x: -0.195, y: 0, z: 1.207}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4810924965523069400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4231486218731219309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8168423408779852198}
+  m_Layer: 3
+  m_Name: ShotPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8168423408779852198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4231486218731219309}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.17, y: 0, z: 1.207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -519,6 +553,7 @@ Transform:
   m_Children:
   - {fileID: 8155012149830744469}
   - {fileID: 5684976697670229495}
+  - {fileID: 8168423408779852198}
   m_Father: {fileID: 6813826711563315449}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1491148864942854351
@@ -536,6 +571,8 @@ MonoBehaviour:
   _target: {fileID: 0}
   _sensor: {fileID: 4869867955329014528}
   _upwards: {x: 0, y: 1, z: 0}
+  _rotationSpeed: 5
+  _useGlobalRotation: 1
   _eulerAnglesOffset: {x: 0, y: 0, z: 0}
   _targetOffset: {x: 0, y: 0, z: 0}
   _offsetDirection: {fileID: 0}
@@ -697,9 +734,14 @@ MonoBehaviour:
   attackInterval: 0.3
   damage: 2
   sensor: {fileID: 4869867955329014528}
-  shootPoint: {fileID: 5684976697670229495}
   bulletPrefab: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
     type: 3}
+  OnAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  shootPoint:
+  - {fileID: 5684976697670229495}
+  - {fileID: 8168423408779852198}
 --- !u!1001 &117598891274716375
 PrefabInstance:
   m_ObjectHideFlags: 0

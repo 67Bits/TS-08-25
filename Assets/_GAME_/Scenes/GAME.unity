@@ -1434,9 +1434,15 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
         type: 3}
+      propertyPath: 'shopOptions.Array.data[0].items.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: bfc68fd024ac094408702f0362a1444d,
+        type: 2}
+    - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
+        type: 3}
       propertyPath: 'shopOptions.Array.data[1].items.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: 15fd8bdda9e3ca64fbdb167fc9336d65,
+      objectReference: {fileID: 11400000, guid: bfc68fd024ac094408702f0362a1444d,
         type: 2}
     - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
         type: 3}
