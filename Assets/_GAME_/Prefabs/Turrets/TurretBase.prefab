@@ -294,6 +294,8 @@ MonoBehaviour:
   _target: {fileID: 0}
   _sensor: {fileID: 4880425141497886922}
   _upwards: {x: 0, y: 1, z: 0}
+  _rotationSpeed: 45
+  _useGlobalRotation: 1
   _eulerAnglesOffset: {x: 0, y: 0, z: 0}
   _targetOffset: {x: 0, y: 0, z: 0}
   _offsetDirection: {fileID: 0}

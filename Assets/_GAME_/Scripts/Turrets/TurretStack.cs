@@ -17,24 +17,58 @@ namespace Turret
         [Header("Turret Options")]
         public List<TurretSensor> TurretOptions = new List<TurretSensor>();
 
-        private Stack<TurretSensor> turretStack = new Stack<TurretSensor>();
+        [SerializeField] private List<TurretSensor> turretList = new List<TurretSensor>();
 
         [Button]
         public void AddTurret(TurretSensor turretSensor)
         {
-            if (turretStack.Count >= maxTurrets)
+            if (turretList.Count >= maxTurrets)
             {
                 Debug.Log("Max turret limit reached!");
                 return;
             }
-            var turret = Instantiate(turretSensor.gameObject, transform.position + stackDirection * stackOffset * turretStack.Count, Quaternion.identity, transform);
+
+            var turret = Instantiate(
+                turretSensor.gameObject,
+                transform.position + stackDirection * stackOffset * turretList.Count,
+                Quaternion.identity,
+                transform
+            ).GetComponent<TurretSensor>();
 
             if (stackTop != null)
             {
-                stackTop.localPosition = turret.transform.position + stackDirection * stackOffset;
+                stackTop.localPosition += stackDirection * stackOffset;
             }
 
-            turretStack.Push(turret.GetComponent<TurretSensor>());
+            turretList.Add(turret);
         }
+
+        [Button]
+        public void RemoveTurret()
+        {
+            if (turretList.Count == 0)
+            {
+                Debug.Log("No turrets to remove!");
+                return;
+            }
+
+            var turretToRemove = turretList[turretList.Count - 1];
+            DestroyImmediate(turretToRemove.gameObject);
+            turretList.RemoveAt(turretList.Count - 1);
+
+            if (stackTop != null)
+            {
+                stackTop.transform.localPosition -= stackDirection * stackOffset;
+            }
+        }
+
+        [Button]
+        public void AddCannon() => AddTurret(TurretOptions[0]);
+
+        [Button]
+        public void AddShotter() => AddTurret(TurretOptions[1]);
+
+        [Button]
+        public void AddFlameThrower() => AddTurret(TurretOptions[2]);
     }
 }
