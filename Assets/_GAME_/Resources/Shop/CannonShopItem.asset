@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b867d47261e1a944f9afb537ab2c9415, type: 3}
-  m_Name: TurretShopItem
+  m_Name: CannonShopItem
   m_EditorClassIdentifier: 
-  Name: Turret
+  Name: Cannon
   Description: 
-  Icon: {fileID: 21300000, guid: 962d8365913f04935b5da32f81c41988, type: 3}
+  Icon: {fileID: 21300000, guid: 16a86a7f581fc4dfb953e0df8ad3ecac, type: 3}
   Price: 0
-  TurretPrefab: {fileID: 5251137608207943868, guid: 2ab2642599f5b0440ac155eeb01797f0,
+  TurretPrefab: {fileID: 6589969650375879734, guid: a1e439091e2e6fe419b2034cda2c80ec,
     type: 3}
