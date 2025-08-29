@@ -1423,6 +1423,29 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
         type: 3}
+      propertyPath: isDebug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
+        type: 3}
+      propertyPath: 'shopOptions.Array.data[0].items.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 15fd8bdda9e3ca64fbdb167fc9336d65,
+        type: 2}
+    - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
+        type: 3}
+      propertyPath: 'shopOptions.Array.data[1].items.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 15fd8bdda9e3ca64fbdb167fc9336d65,
+        type: 2}
+    - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
+        type: 3}
+      propertyPath: 'shopOptions.Array.data[2].items.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 15fd8bdda9e3ca64fbdb167fc9336d65,
+        type: 2}
+    - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
+        type: 3}
       propertyPath: OnStoreEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1777585858}

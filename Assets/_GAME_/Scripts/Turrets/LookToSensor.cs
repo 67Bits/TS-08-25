@@ -11,6 +11,10 @@ namespace Turret
         [SerializeField] private TurretSensor _sensor;
         [SerializeField] private Vector3 _upwards = Vector3.up;
 
+        [Header("Rotation Settings")]
+        [SerializeField] private float _rotationSpeed = 5f;
+        [SerializeField] private bool _useGlobalRotation = true;
+
         [Header("Offset")]
         [SerializeField] private Vector3 _eulerAnglesOffset;
         [SerializeField] private Vector3 _targetOffset = Vector3.up;
@@ -22,6 +26,7 @@ namespace Turret
         [SerializeField] private bool _ignoreZ;
 
         private Vector3 _currentTargetOffset;
+        private Quaternion _targetRotation;
 
         public Transform Target => _target != null ? _target : transform;
 
@@ -40,18 +45,25 @@ namespace Turret
             Transform offsetDirection = _offsetDirection != null ? _offsetDirection : targetCollider.transform;
             Vector3 targetPosition = targetCollider.transform.position + offsetDirection.TransformVector(_currentTargetOffset);
 
-            // Get rotation towards target
-            Quaternion rotation = GetRotation(targetPosition);
+            // Get target rotation towards target
+            _targetRotation = GetRotation(targetPosition);
 
             // Apply Euler angles offset
-            rotation *= Quaternion.Euler(_eulerAnglesOffset);
-
-            // Apply rotation
-            Target.rotation = rotation;
+            _targetRotation *= Quaternion.Euler(_eulerAnglesOffset);
 
             // Apply axis constraints
-            Vector3 eulerAngles = ClampEulerAngles(Target.localRotation.eulerAngles);
-            Target.localRotation = Quaternion.Euler(eulerAngles);
+            Vector3 constrainedEulerAngles = ClampEulerAngles(_targetRotation.eulerAngles);
+            _targetRotation = Quaternion.Euler(constrainedEulerAngles);
+
+            // Smoothly lerp towards target rotation
+            if (_useGlobalRotation)
+            {
+                Target.rotation = Quaternion.Slerp(Target.rotation, _targetRotation, _rotationSpeed * Time.deltaTime);
+            }
+            else
+            {
+                Target.localRotation = Quaternion.Slerp(Target.localRotation, _targetRotation, _rotationSpeed * Time.deltaTime);
+            }
         }
 
         private Vector3 ClampEulerAngles(Vector3 eulerAngles)
@@ -66,6 +78,22 @@ namespace Turret
         {
             Vector3 forward = (target - transform.position).normalized;
             return Quaternion.LookRotation(forward, _upwards);
+        }
+
+        // Optional: For debugging or external access
+        public Quaternion GetCurrentTargetRotation()
+        {
+            return _targetRotation;
+        }
+
+        public float GetRotationSpeed()
+        {
+            return _rotationSpeed;
+        }
+
+        public void SetRotationSpeed(float speed)
+        {
+            _rotationSpeed = Mathf.Max(0, speed);
         }
     }
 }
