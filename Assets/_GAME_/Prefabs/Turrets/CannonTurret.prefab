@@ -10,10 +10,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 861291036267002552, guid: b69ff8ba47bd87946b858663eabcefd6,
         type: 3}
+      propertyPath: damage
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 861291036267002552, guid: b69ff8ba47bd87946b858663eabcefd6,
+        type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 3042120834448722189, guid: 2ab9fda1c3ae2264a9b4aca7ee6c31b2,
         type: 3}
+    - target: {fileID: 861291036267002552, guid: b69ff8ba47bd87946b858663eabcefd6,
+        type: 3}
+      propertyPath: attackInterval
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 861291036267002552, guid: b69ff8ba47bd87946b858663eabcefd6,
         type: 3}
       propertyPath: shootPoint.Array.size

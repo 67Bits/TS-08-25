@@ -66,7 +66,37 @@ PrefabInstance:
     - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
         type: 3}
       propertyPath: velocity
-      value: 20
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
+        type: 3}
+      propertyPath: heightCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
+        type: 3}
+      propertyPath: heightCurve.m_Curve.Array.data[1].time
+      value: 0.4962687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
+        type: 3}
+      propertyPath: heightCurve.m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
+        type: 3}
+      propertyPath: heightCurve.m_Curve.Array.data[1].value
+      value: 0.011385195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
+        type: 3}
+      propertyPath: heightCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
+        type: 3}
+      propertyPath: heightCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 2516394264492373475, guid: 73fad25195bc15944875614d494668f0,
         type: 3}

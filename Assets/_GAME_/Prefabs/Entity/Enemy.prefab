@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _debug: 1
-  _debugStartHealth: 1000
+  _debugStartHealth: 300
   _debugDamageToTake: 0
   _debugHeal: 10
   OnHeal:
