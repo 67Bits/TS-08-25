@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementType: 1
   duration: 3
-  velocity: 25
+  velocity: 15
   maxHeight: 3
   destroyAfterSeconds: 1
   lookatTarget: 0

@@ -19,9 +19,14 @@ namespace TS
             {
                 Bullet bullet = Instantiate(resourceBullet.gameObject, transform.position, Quaternion.identity).GetComponent<Bullet>();
                 ResourceManager resourceManager = other.GetComponent<ResourceManager>();
+                OnCollectResource.Invoke();
+
                 if ( resourceManager == null) return;
 
-                bullet.SetUpCurvedMovement(transform, resourceManager.GetResourceEndPoint(), OnCollectResource);
+                UnityEvent OnReach = new UnityEvent();
+                OnReach.AddListener(resourceManager.OnConsumeResource.Invoke);
+
+                bullet.SetUpCurvedMovement(transform, resourceManager.GetResourceEndPoint(), OnReach);
                 OnCollectResource.Invoke();
             }
         }

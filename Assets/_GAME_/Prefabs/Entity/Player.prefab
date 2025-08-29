@@ -135,6 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceEndPoint: {fileID: 9216890363909490679}
+  OnConsumeResource:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4823827030376870498
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,9 +524,13 @@ MonoBehaviour:
   attackInterval: 0.3
   damage: 10
   sensor: {fileID: 8347720560826281702}
-  shootPoint: {fileID: 8735823086809904358}
   bulletPrefab: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
     type: 3}
+  OnAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  shootPoint:
+  - {fileID: 0}
 --- !u!1 &6402078027691226332
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +809,7 @@ PrefabInstance:
     - target: {fileID: 8541400549615427098, guid: 463e0c4a9da75804991fedc5176b2ac7,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.02022877
+      value: 0.01011438
       objectReference: {fileID: 0}
     - target: {fileID: 8541400549615427098, guid: 463e0c4a9da75804991fedc5176b2ac7,
         type: 3}
@@ -863,6 +870,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541400549615427098, guid: 463e0c4a9da75804991fedc5176b2ac7,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
