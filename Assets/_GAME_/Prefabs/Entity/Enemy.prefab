@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 1366157552986047539}
   - component: {fileID: 5489672476682383588}
   - component: {fileID: 4138287236571292364}
+  - component: {fileID: 1469321728726627328}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Player
@@ -238,6 +239,7 @@ Transform:
   - {fileID: 5904489512416969783}
   - {fileID: 8684220441449982602}
   - {fileID: 1428050101500444069}
+  - {fileID: 7129420546568172261}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1492009222498797549
@@ -346,6 +348,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretTargetBy: {fileID: 0}
+--- !u!114 &1469321728726627328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823827030376870498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bbe1f0cdf190f543a6cb8d2b8dc4297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPLayer: 0
+  _damageTextPrefab: {fileID: 3320257392556193219, guid: 87462851cc30495488e35c767e852fd3,
+    type: 3}
+  _healingTextPrefab: {fileID: 3320257392556193219, guid: 87462851cc30495488e35c767e852fd3,
+    type: 3}
+  _spawnPoint: {fileID: 7129420546568172261}
+--- !u!1 &4837062935234939057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7129420546568172261}
+  m_Layer: 0
+  m_Name: DamamageIndicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7129420546568172261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4837062935234939057}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3824118088083931290}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5849994014601540981
 GameObject:
   m_ObjectHideFlags: 0
