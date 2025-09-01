@@ -18,6 +18,11 @@ namespace TS
             SetOrbitPoint();
         }
 
+        private void OnEnable()
+        {
+            gameObject.layer = LayerMask.NameToLayer("Enemy");
+        }
+
         void Update()
         {
             agent.SetDestination(orbitPoint.transform.position);

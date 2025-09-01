@@ -22,5 +22,10 @@ namespace SSB.Quests.Examples
             _isLoaded = true;
             SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
         }
+
+        public void LoadScene()
+        {
+            SceneManager.LoadScene(sceneIndex);
+        }
     }
 }
