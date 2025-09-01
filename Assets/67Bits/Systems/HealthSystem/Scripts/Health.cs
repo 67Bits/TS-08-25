@@ -19,6 +19,7 @@ namespace SSBHealthSystem
         public UnityEvent OnDeath;
 
         public Action<float, float> OnStartBleed { get; set; }
+        public Action<float> onTakeDamageValue { get; set; }
         public Action OnHealthChange { get; set; }
 
         private float _maxHealth;
@@ -66,6 +67,7 @@ namespace SSBHealthSystem
 
             //Debug.Log($"{name} tomei {damageToTake} de dano, to com {_currentHealth} de vida");
 
+            onTakeDamageValue?.Invoke(damageToTake);
             OnTakeDamage?.Invoke();
             OnHealthChange?.Invoke();
 
