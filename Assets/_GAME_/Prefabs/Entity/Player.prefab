@@ -5159,6 +5159,39 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &3442651695252055854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 161822161749023897}
+  m_Layer: 3
+  m_Name: Spawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &161822161749023897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442651695252055854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8340280577731432886}
+  - {fileID: 5666610364622593194}
+  m_Father: {fileID: 3824118088083931290}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3883793042320119373
 GameObject:
   m_ObjectHideFlags: 0
@@ -5299,6 +5332,120 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &3969284393198523865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8340280577731432886}
+  - component: {fileID: 3464362633811267571}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8340280577731432886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969284393198523865}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 161822161749023897}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3464362633811267571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969284393198523865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d71903938063b84890312d2ee01b809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoInitialize: 1
+  _requireZeroCounterToFinish: 1
+  _usePool: 0
+  _currentWave: 0
+  _currentWaveName: 
+  _useTransformPoints: 0
+  _transformPoints: []
+  _spawnPoints:
+  - {x: 0, y: 0, z: 0}
+  _useAreaBeetweenPoints: 0
+  _useRadius: 1
+  _AreaRadius: 13
+  Waves:
+  - Spawner: {fileID: 0}
+    Name: Wave
+    NextWaveOnFinish: 0
+    StartDelay: 0
+    Loop: 1
+    LoopAmmount: 1
+    Delay: 0
+    Duration: 0
+    Ammount: 0
+    AlwaysSpawn: 0
+    Spawns:
+    - Name: 
+      Prefab: {fileID: 4823827030376870498, guid: 8b08544029711484e92d959f0d9662f8,
+        type: 3}
+      TargetPoint: {fileID: 0}
+      SpawnAmmount: 5
+      SpawnChance: 100
+      OnSpawnCreated:
+        m_PersistentCalls:
+          m_Calls: []
+      OnSpawnDisabled:
+        m_PersistentCalls:
+          m_Calls: []
+    OnStartWave:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStopWave:
+      m_PersistentCalls:
+        m_Calls: []
+    OnFinishWave:
+      m_PersistentCalls:
+        m_Calls: []
+    ClearPercentage: 100
+    _invokeMulitpleTimes: 0
+    OnWaveClear:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GameEvents, 67Bits
+          m_MethodName: StartAllEventsTypes
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    SpawCount: 0
+    SpawCountTotal: 0
+    ElapsedTime: 0
+    Started: 0
+    Stopped: 0
+    Completed: 0
+  <SpawnerCount>k__BackingField: 0
+  <Finished>k__BackingField: 0
 --- !u!1 &4114490949407366426
 GameObject:
   m_ObjectHideFlags: 0
@@ -5449,7 +5596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3824118088083931290}
   - component: {fileID: 1492009222498797549}
-  - component: {fileID: 5153884768771701224}
+  - component: {fileID: 4510047125484626165}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -5477,6 +5624,7 @@ Transform:
   - {fileID: 8684220441449982602}
   - {fileID: 1428050101500444069}
   - {fileID: 6594004822623875641}
+  - {fileID: 161822161749023897}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1492009222498797549
@@ -5516,8 +5664,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!65 &5153884768771701224
-BoxCollider:
+--- !u!135 &4510047125484626165
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5535,8 +5683,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5811806935109699615
 GameObject:
   m_ObjectHideFlags: 0
@@ -10834,6 +10982,120 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!1 &7443027941610788612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5666610364622593194}
+  - component: {fileID: 3965902221709716060}
+  m_Layer: 0
+  m_Name: Spawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5666610364622593194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7443027941610788612}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 161822161749023897}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3965902221709716060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7443027941610788612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d71903938063b84890312d2ee01b809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoInitialize: 1
+  _requireZeroCounterToFinish: 1
+  _usePool: 0
+  _currentWave: 0
+  _currentWaveName: 
+  _useTransformPoints: 0
+  _transformPoints: []
+  _spawnPoints:
+  - {x: 0, y: 0, z: 0}
+  _useAreaBeetweenPoints: 0
+  _useRadius: 1
+  _AreaRadius: 13
+  Waves:
+  - Spawner: {fileID: 0}
+    Name: Wave
+    NextWaveOnFinish: 0
+    StartDelay: 0
+    Loop: 1
+    LoopAmmount: 1
+    Delay: 0
+    Duration: 0
+    Ammount: 0
+    AlwaysSpawn: 0
+    Spawns:
+    - Name: 
+      Prefab: {fileID: 4823827030376870498, guid: 8b08544029711484e92d959f0d9662f8,
+        type: 3}
+      TargetPoint: {fileID: 0}
+      SpawnAmmount: 15
+      SpawnChance: 100
+      OnSpawnCreated:
+        m_PersistentCalls:
+          m_Calls: []
+      OnSpawnDisabled:
+        m_PersistentCalls:
+          m_Calls: []
+    OnStartWave:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStopWave:
+      m_PersistentCalls:
+        m_Calls: []
+    OnFinishWave:
+      m_PersistentCalls:
+        m_Calls: []
+    ClearPercentage: 100
+    _invokeMulitpleTimes: 0
+    OnWaveClear:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GameEvents, 67Bits
+          m_MethodName: StartAllEventsTypes
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    SpawCount: 0
+    SpawCountTotal: 0
+    ElapsedTime: 0
+    Started: 0
+    Stopped: 0
+    Completed: 0
+  <SpawnerCount>k__BackingField: 0
+  <Finished>k__BackingField: 0
 --- !u!1 &7596601187714276941
 GameObject:
   m_ObjectHideFlags: 0

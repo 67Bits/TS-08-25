@@ -119,6 +119,116 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &27019573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 27019574}
+  - component: {fileID: 27019577}
+  - component: {fileID: 27019576}
+  - component: {fileID: 27019578}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &27019574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27019573}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1706084472}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &27019576
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27019573}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &27019577
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27019573}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!136 &27019578
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27019573}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Height: 24.99
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &81079775
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,6 +260,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatWaves:
   - spawner: {fileID: 1562585533210891775}
+    enemyToAmbushPlayer: {fileID: 1366157552986047539, guid: 8b08544029711484e92d959f0d9662f8,
+      type: 3}
+  - spawner: {fileID: 566038906}
     enemyToAmbushPlayer: {fileID: 1366157552986047539, guid: 8b08544029711484e92d959f0d9662f8,
       type: 3}
   parentEnemy: {fileID: 195763356}
@@ -297,6 +410,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2435534093339237516}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &566038906 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3965902221709716060, guid: 4f191075184f5c74399b102fb1e3c242,
+    type: 3}
+  m_PrefabInstance: {fileID: 1562585533210891774}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d71903938063b84890312d2ee01b809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &639961934
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,6 +1014,7 @@ Transform:
   m_Children:
   - {fileID: 195763356}
   - {fileID: 1895578390}
+  - {fileID: 27019574}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1706084473
@@ -910,8 +1036,8 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 3839
-  m_UseGeometry: 0
+    m_Bits: 257
+  m_UseGeometry: 1
   m_DefaultArea: 0
   m_GenerateLinks: 0
   m_IgnoreNavMeshAgent: 1
@@ -1117,7 +1243,7 @@ GameObject:
   - component: {fileID: 1895578393}
   - component: {fileID: 1895578392}
   - component: {fileID: 1895578391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,6 +1424,16 @@ PrefabInstance:
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3464362633811267571, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: Waves.Array.data[0].OnWaveClear.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1497090230}
+    - target: {fileID: 3464362633811267571, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: Waves.Array.data[0].OnWaveClear.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartAllEventsTypes
+      objectReference: {fileID: 0}
     - target: {fileID: 3824118088083931290, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1348,6 +1484,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3965902221709716060, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: Waves.Array.data[0].OnWaveClear.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1497090230}
+    - target: {fileID: 3965902221709716060, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: Waves.Array.data[0].OnWaveClear.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartAllEventsTypes
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969284393198523865, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4823827030376870498, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
       propertyPath: m_Name
@@ -1380,7 +1531,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 4f191075184f5c74399b102fb1e3c242, type: 3}
 --- !u!114 &1562585533210891775 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5931504307356030495, guid: 4f191075184f5c74399b102fb1e3c242,
+  m_CorrespondingSourceObject: {fileID: 3464362633811267571, guid: 4f191075184f5c74399b102fb1e3c242,
     type: 3}
   m_PrefabInstance: {fileID: 1562585533210891774}
   m_PrefabAsset: {fileID: 0}

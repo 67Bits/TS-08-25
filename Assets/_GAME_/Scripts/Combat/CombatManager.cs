@@ -23,7 +23,7 @@ namespace TS
         {
             get
             {
-                return currentSpawnerIndex + 1 >= combatWaves.Count;
+                return currentSpawnerIndex + 1 > combatWaves.Count;
             }
         }
 
@@ -73,7 +73,9 @@ namespace TS
         public void InitializeSpawner()
         {
             if (combatWaves.Count == 0) return;
-                combatWaves[currentSpawnerIndex].spawner.gameObject.SetActive(true);
+            
+            combatWaves[currentSpawnerIndex].spawner.gameObject.SetActive(true);
+            currentSpawnerIndex++;
         }
 
         [System.Serializable]
