@@ -54,6 +54,11 @@ namespace TS
             currentSpecialCount = specialQnt;
         }
 
+        public void AttachToGroung(GameObject obj)
+        {
+            obj.transform.SetParent(parent);
+        }
+
         void Update()
         {
             // Move the parent backwards (moves all children together)

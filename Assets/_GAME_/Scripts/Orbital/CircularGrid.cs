@@ -400,6 +400,9 @@ public class CircularGrid : MonoBehaviour
         if (elementToRemove.gridObject != null)
             Destroy(elementToRemove.gridObject);
 
+        float angleStep = 360f / Mathf.Max(movingElements.Count - 1, 1);
+        transform.Rotate(Vector3.up, angleStep);
+
         // Remove from the list
         movingElements.Remove(elementToRemove);
 
