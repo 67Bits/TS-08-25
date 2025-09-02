@@ -225,7 +225,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.8
   m_Height: 24.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -459,7 +459,7 @@ MonoBehaviour:
   centerPointSize: 0.2
   gridPointPrefab: {fileID: 0}
   movingPoints: 1
-  moveSpeed: 45
+  moveSpeed: 30
   pointColor: {r: 0, g: 1, b: 0, a: 1}
   pointSize: 0.3
   showVelocityIndicators: 1
@@ -2034,12 +2034,17 @@ PrefabInstance:
     - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
         type: 3}
       propertyPath: isDebug
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
         type: 3}
       propertyPath: shopCallsBeforeCombat
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
+        type: 3}
+      propertyPath: shopOptions.Array.size
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
         type: 3}

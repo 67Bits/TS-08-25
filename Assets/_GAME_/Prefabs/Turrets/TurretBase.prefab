@@ -70,9 +70,13 @@ MonoBehaviour:
   attackInterval: 0.3
   damage: 10
   sensor: {fileID: 4880425141497886922}
-  shootPoint: {fileID: 8340805409041754697}
   bulletPrefab: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
     type: 3}
+  OnAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  shootPoint:
+  - {fileID: 0}
 --- !u!1 &4535209949891468955
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +298,7 @@ MonoBehaviour:
   _target: {fileID: 0}
   _sensor: {fileID: 4880425141497886922}
   _upwards: {x: 0, y: 1, z: 0}
-  _rotationSpeed: 45
+  _rotationSpeed: 2.5
   _useGlobalRotation: 1
   _eulerAnglesOffset: {x: 0, y: 0, z: 0}
   _targetOffset: {x: 0, y: 0, z: 0}

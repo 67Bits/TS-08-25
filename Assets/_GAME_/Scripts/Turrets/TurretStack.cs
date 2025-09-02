@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Bello;
 using Sirenix.OdinInspector;
+using System.Collections;
 
 namespace Turret
 {
@@ -59,6 +60,44 @@ namespace Turret
             if (stackTop != null)
             {
                 stackTop.transform.localPosition -= stackDirection * stackOffset;
+            }
+        }
+
+        public void ResetRotations(float duration = 1f)
+        {
+            StartCoroutine(ResetRotationsRoutine(duration));
+        }
+
+        private IEnumerator ResetRotationsRoutine(float duration)
+        {
+            float time = 0f;
+
+            // Store initial rotations
+            List<Quaternion> startRotations = new List<Quaternion>();
+            foreach (var turret in turretList)
+            {
+                startRotations.Add(turret.transform.GetChild(0).rotation);
+            }
+
+            while (time < duration)
+            {
+                time += Time.deltaTime;
+                float t = time / duration;
+
+                for (int i = 0; i < turretList.Count; i++)
+                {
+                    if (turretList[i] == null) continue;
+                    turretList[i].transform.GetChild(0).rotation = Quaternion.Slerp(startRotations[i], Quaternion.identity, t);
+                }
+
+                yield return null;
+            }
+
+            // Ensure perfect alignment at the end
+            foreach (var turret in turretList)
+            {
+                if (turret == null) continue;
+                turret.transform.GetChild(0).rotation = Quaternion.identity;
             }
         }
 

@@ -5026,6 +5026,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1277905888780190204}
+          m_TargetAssemblyTypeName: Turret.TurretStack, Turret
+          m_MethodName: ResetRotations
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &2765572943586733032
 GameObject:
   m_ObjectHideFlags: 0
@@ -5388,7 +5400,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   _useAreaBeetweenPoints: 0
   _useRadius: 1
-  _AreaRadius: 13
+  _AreaRadius: 10
   Waves:
   - Spawner: {fileID: 0}
     Name: Wave
@@ -10568,7 +10580,7 @@ MonoBehaviour:
   dontDestroyOnLoad: 0
   stackDirection: {x: 0, y: 1, z: 0}
   stackOffset: 1
-  maxTurrets: 5
+  maxTurrets: 6
   stackTop: {fileID: 3583809849275910040}
   TurretOptions:
   - {fileID: 6589969650375879734, guid: a1e439091e2e6fe419b2034cda2c80ec, type: 3}
@@ -15871,7 +15883,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   _useAreaBeetweenPoints: 0
   _useRadius: 1
-  _AreaRadius: 13
+  _AreaRadius: 10
   Waves:
   - Spawner: {fileID: 0}
     Name: Wave

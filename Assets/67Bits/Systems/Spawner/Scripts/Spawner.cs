@@ -146,13 +146,13 @@ namespace SSB.Spawner
                     {
                         if (spawn.SpawnChance == 0 || Random.Range(0, 100) < spawn.SpawnChance)
                         {
-                            var spawned = _usePool ? spawn.Prefab.InstantiateFromPool() : Instantiate(spawn.Prefab);
+                            var spawned = _usePool ? spawn.Prefab.InstantiateFromPool() : Instantiate(spawn.Prefab, spawn.TargetPoint ? spawn.TargetPoint.position : GetPosition(), Quaternion.identity);
                             if (!spawned)
                             {
                                 Debug.LogError($"Failed to spawn at {gameObject.name} {wave.Name}");
                                 break;
                             }
-                            spawned.transform.position = spawn.TargetPoint ? spawn.TargetPoint.position : GetPosition();
+                            //spawned.transform.position = spawn.TargetPoint ? spawn.TargetPoint.position : GetPosition();
                             var spawnObj = spawned.AddComponent<SpawnObject>();
                             spawnObj.Spawner = this;
                             spawnObj.WaveName = wave.Name;
