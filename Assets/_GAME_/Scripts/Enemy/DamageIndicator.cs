@@ -46,8 +46,7 @@ namespace TS
             {
                 Vector3 position = _spawnPoint != null ? _spawnPoint.position : transform.position;
                 TextMeshProUGUI text = Instantiate(_damageTextPrefab, position, _damageTextPrefab.transform.rotation, _spawnPoint).GetComponentInChildren<TextMeshProUGUI>();
-                if (isPLayer) text.text = "-" + damage.ToString("F0");
-                else text.text = damage.ToString("F0");
+                text.text = "-" + damage.ToString("F0");
 
             }
             catch (Exception exception)
