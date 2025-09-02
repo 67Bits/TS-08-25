@@ -5388,7 +5388,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   _useAreaBeetweenPoints: 0
   _useRadius: 1
-  _AreaRadius: 13
+  _AreaRadius: 10
   Waves:
   - Spawner: {fileID: 0}
     Name: Wave
@@ -15871,7 +15871,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   _useAreaBeetweenPoints: 0
   _useRadius: 1
-  _AreaRadius: 13
+  _AreaRadius: 10
   Waves:
   - Spawner: {fileID: 0}
     Name: Wave
