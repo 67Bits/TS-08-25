@@ -44,6 +44,19 @@
     "com.unity.modules.unitywebrequesttexture": "1.0.0",
     "com.unity.modules.unitywebrequestwww": "1.0.0",
     "com.unity.modules.vehicles": "1.0.0",
-    "com.unity.modules.video": "1.0.0"
-  }
+    "com.unity.modules.video": "1.0.0",
+    "com.homagames.sdk-installer-bundle": "2.4.1"
+  },
+  "scopedRegistries": [
+    {
+      "name": "Homa Games SDK",
+      "url": "https://npm.homa-cloud.com/unity-main",
+      "scopes": [
+        "com.homagames",
+        "com.google.external-dependency-manager",
+        "com.adjust.sdk",
+        "com.gameanalytics.sdk"
+      ]
+    }
+  ]
 }
