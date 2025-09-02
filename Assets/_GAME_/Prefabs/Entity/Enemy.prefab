@@ -449,9 +449,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPLayer: 0
-  _damageTextPrefab: {fileID: 3320257392556193219, guid: 87462851cc30495488e35c767e852fd3,
+  _damageTextPrefab: {fileID: 3320257392556193219, guid: 46d979b252962da4c926f9441353d79d,
     type: 3}
-  _healingTextPrefab: {fileID: 3320257392556193219, guid: 87462851cc30495488e35c767e852fd3,
+  _healingTextPrefab: {fileID: 3320257392556193219, guid: 46d979b252962da4c926f9441353d79d,
     type: 3}
   _spawnPoint: {fileID: 7129420546568172261}
 --- !u!1 &4837062935234939057
