@@ -25,6 +25,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - TCP2_RIM_LIGHTING
   - TCP2_UV_NORMALS_FULL
   m_InvalidKeywords:
   - _EMISSION
@@ -122,8 +123,8 @@ Material:
     - _RampThreshold: 0.29
     - _ReceiveShadows: 1
     - _ReceiveShadowsOff: 1
-    - _RimMax: 1
-    - _RimMin: 0.5
+    - _RimMax: 1.25
+    - _RimMin: 1.5
     - _Shadow_HSV_H: 0
     - _Shadow_HSV_S: 0
     - _Shadow_HSV_V: 0
@@ -138,7 +139,7 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _UVSec: 0
-    - _UseRim: 0
+    - _UseRim: 1
     - _UseSpecular: 0
     - _XRMotionVectorsPass: 1
     - _ZWrite: 1
@@ -152,7 +153,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HColor: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
     - _OutlineColorVertex: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _RimDir: {r: 0, g: 0, b: 1, a: 1}
     - _SColor: {r: 0.58858824, g: 0.37068352, b: 0.6603774, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
