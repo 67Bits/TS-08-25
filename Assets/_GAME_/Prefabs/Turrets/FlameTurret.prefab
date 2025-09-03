@@ -2050,7 +2050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackInterval: 0.3
-  damage: 30
+  damage: 45
   sensor: {fileID: 8243849093003104868}
   damageCollider: {fileID: 4268675278596374491}
 --- !u!4 &7614932456166669263 stripped
@@ -2936,15 +2936,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4617365708927926, guid: 17dea6be5830f6b458f23b1670c8e408, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4617365708927926, guid: 17dea6be5830f6b458f23b1670c8e408, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4617365708927926, guid: 17dea6be5830f6b458f23b1670c8e408, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4617365708927926, guid: 17dea6be5830f6b458f23b1670c8e408, type: 3}
       propertyPath: m_LocalPosition.x
