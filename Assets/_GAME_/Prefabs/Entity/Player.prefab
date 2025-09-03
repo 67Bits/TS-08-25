@@ -146,7 +146,7 @@ MonoBehaviour:
     - rid: 1224781266526142713
       type: {class: MMF_SquashAndStretchSpring, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -200026745
         Label: Squash and Stretch Spring
         OriginalLabel: Squash and Stretch Spring
@@ -230,7 +230,7 @@ MonoBehaviour:
     - rid: 1224781266526142723
       type: {class: MMF_MMSoundManagerSound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -538392198
         Label: MMSoundManager Sound
         OriginalLabel: MMSoundManager Sound
