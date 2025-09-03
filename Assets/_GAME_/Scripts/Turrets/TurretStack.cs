@@ -4,6 +4,7 @@ using UnityEngine;
 using Bello;
 using Sirenix.OdinInspector;
 using System.Collections;
+using UnityEngine.Events;
 
 namespace Turret
 {
@@ -19,6 +20,7 @@ namespace Turret
         public List<TurretSensor> TurretOptions = new List<TurretSensor>();
 
         [SerializeField] private List<TurretSensor> turretList = new List<TurretSensor>();
+        [SerializeField] private UnityEvent OnAddTower;
 
         [Button]
         public void AddTurret(TurretSensor turretSensor)
@@ -42,6 +44,8 @@ namespace Turret
             }
 
             turretList.Add(turret);
+
+            OnAddTower?.Invoke();
         }
 
         [Button]

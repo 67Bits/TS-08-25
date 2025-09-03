@@ -459,7 +459,7 @@ MonoBehaviour:
   centerPointSize: 0.2
   gridPointPrefab: {fileID: 0}
   movingPoints: 1
-  moveSpeed: 30
+  moveSpeed: 15
   pointColor: {r: 0, g: 1, b: 0, a: 1}
   pointSize: 0.3
   showVelocityIndicators: 1
