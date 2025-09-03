@@ -871,8 +871,8 @@ MonoBehaviour:
         SequentialOrderHoldCooldownDuration: 2
         RandomUnique: 0
         SoundDataSO: {fileID: 0}
-        MinVolume: 1
-        MaxVolume: 1
+        MinVolume: 0.5
+        MaxVolume: 0.5
         MinPitch: 1
         MaxPitch: 1
         MmSoundManagerTrack: 0
@@ -1305,7 +1305,7 @@ PrefabInstance:
     - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
         type: 3}
       propertyPath: velocity
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
         type: 3}
