@@ -4031,6 +4031,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423911863151311362, guid: 463e0c4a9da75804991fedc5176b2ac7,
         type: 3}
+      propertyPath: managedReferences[1976149599517933696].Active
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7423911863151311362, guid: 463e0c4a9da75804991fedc5176b2ac7,
+        type: 3}
+      propertyPath: managedReferences[1976149599517933697].Active
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7423911863151311362, guid: 463e0c4a9da75804991fedc5176b2ac7,
+        type: 3}
+      propertyPath: managedReferences[1976149599517933699].Active
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7423911863151311362, guid: 463e0c4a9da75804991fedc5176b2ac7,
+        type: 3}
       propertyPath: managedReferences[1976149599517933654].OriginalLabel
       value: Scale
       objectReference: {fileID: 0}
