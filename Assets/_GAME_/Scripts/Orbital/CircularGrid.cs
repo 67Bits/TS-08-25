@@ -401,11 +401,18 @@ public class CircularGrid : MonoBehaviour
             Destroy(elementToRemove.gridObject);
 
         //// roatate
-        float angleStep = 360f / Mathf.Max(movingElements.Count - 1, 1);
-        transform.Rotate(Vector3.up, angleStep);
+        if (movingElements.Count > 2)
+        {
+            float angleStep = 360f / Mathf.Max(movingElements.Count - 1, 1);
+            transform.Rotate(Vector3.up, angleStep);
+        }
+        else if (movingElements.Count == 2)
+        {
+            transform.Rotate(Vector3.up, 180);
+        }
 
-        // Remove from the list
-        movingElements.Remove(elementToRemove);
+            // Remove from the list
+            movingElements.Remove(elementToRemove);
 
         // Recalculate positions for remaining points
         if (movingElements.Count >= 2) RepositionAllPoints();

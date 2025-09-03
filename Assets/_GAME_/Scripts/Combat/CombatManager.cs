@@ -50,6 +50,7 @@ namespace TS
         {
             currentEnemyToFacePlayer = Instantiate(combatWaves[currentSpawnerIndex].enemyToAmbushPlayer.gameObject, parentEnemy).transform;
             currentEnemyToFacePlayer.position = transform.position + (Vector3.forward * distanceToPlayer);
+            currentEnemyToFacePlayer.transform.Rotate(0, 180, 0);
             CombatStarter combStart = currentEnemyToFacePlayer.gameObject.AddComponent<CombatStarter>();
             combStart.StartStarter(this);
             OnEnemyFacePlayerStart?.Invoke();

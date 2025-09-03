@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Turret
 {
@@ -7,6 +8,8 @@ namespace Turret
         [SerializeField] private TurretSensor _sensor;
         [SerializeField] private ParticleSystem _particleSystem;
         private Transform _target;
+        [SerializeField] private UnityEvent onParticlePlay;
+        [SerializeField] private UnityEvent onParticleStop;
 
         void Update()
         {
@@ -15,12 +18,18 @@ namespace Turret
             if (_sensor.CurrentTarget == null)
             {
                 if (_particleSystem.isPlaying)
+                {
                     _particleSystem.Stop();
+                    onParticleStop?.Invoke();
+                }
             }
             else
             {
                 if (!_particleSystem.isPlaying)
+                {
                     _particleSystem.Play();
+                    onParticlePlay?.Invoke();
+                }
             }
         }
     }

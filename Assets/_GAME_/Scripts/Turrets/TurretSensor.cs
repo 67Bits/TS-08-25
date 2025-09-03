@@ -5,6 +5,7 @@ using SSBHealthSystem;
 using System;
 using Random = UnityEngine.Random;
 using Unity.Collections;
+using UnityEngine.AI;
 
 
 namespace Turret
@@ -117,6 +118,13 @@ namespace Turret
                 return false;
             }
 
+            // Check orbit AI
+            NavMeshAgent agent = targetCollider.GetComponent<NavMeshAgent>();
+            if (agent && (!agent.enabled || agent.isStopped))
+            {
+                return false;
+            }
+
             return true;
         }
 
@@ -197,9 +205,10 @@ namespace Turret
             if (targets == null || targets.Count == 0)
                 return CurrentTarget; // keep what we have
 
-            if (CurrentTarget && !CurrentTarget.activeSelf)
+            if (CurrentTarget)
             {
-                CurrentTarget = null;
+                if (!CanDetect(CurrentTarget.GetComponent<Collider>()))
+                    return null;
             }
 
             // Collect valid candidates

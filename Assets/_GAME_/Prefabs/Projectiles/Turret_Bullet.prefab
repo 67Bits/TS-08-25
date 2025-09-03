@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementType: 1
   duration: 3
-  velocity: 25
+  velocity: 5
   maxHeight: 5
   destroyAfterSeconds: 1
   lookatTarget: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  offSetPointB: {x: 0, y: 0, z: 0}
+  offSetPointB: {x: 0, y: 2.5, z: 0}
 --- !u!1 &6517310463963294248
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +156,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2086fc2dcc2351246bf617f5c4fe54df, type: 2}
+  - {fileID: -1629089541868478897, guid: 4f428a8918c559c44b229715a237c4cc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
