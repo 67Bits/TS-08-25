@@ -197,7 +197,7 @@ namespace Turret
             if (targets == null || targets.Count == 0)
                 return CurrentTarget; // keep what we have
 
-            if (CurrentTarget && !CurrentTarget.activeSelf)
+            if (CurrentTarget && !CurrentTarget.activeSelf && CurrentTarget.TryGetComponent<Health>(out var currentHealth) && currentHealth.CurrentHealth <= 0)
             {
                 CurrentTarget = null;
             }

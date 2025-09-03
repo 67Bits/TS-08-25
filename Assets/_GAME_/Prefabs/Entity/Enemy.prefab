@@ -3735,7 +3735,7 @@ MonoBehaviour:
   attackInterval: 0.3
   damage: 2
   sensor: {fileID: 4869867955329014528}
-  bulletPrefab: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
+  bulletPrefab: {fileID: 2189169309488628842, guid: 6d63f9544fb8f064ab86ed6ec8708a1a,
     type: 3}
   OnAttack:
     m_PersistentCalls:
