@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using SSBHealthSystem;
+using UnityEngine.Events;
 
 
 namespace TS
@@ -12,6 +13,9 @@ namespace TS
         private Transform orbitPoint;
         private Health Health;
 
+        [SerializeField] private UnityEvent Disable;
+        [SerializeField] private UnityEvent Enable;
+
         void Start()
         {
             Health = GetComponent<Health>();
@@ -21,6 +25,12 @@ namespace TS
         private void OnEnable()
         {
             gameObject.layer = LayerMask.NameToLayer("Enemy");
+            Enable?.Invoke();
+        }
+
+        private void OnDisable()
+        {
+            Disable?.Invoke();
         }
 
         void Update()
