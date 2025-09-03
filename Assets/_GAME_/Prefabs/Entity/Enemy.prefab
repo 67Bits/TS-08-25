@@ -3979,6 +3979,11 @@ PrefabInstance:
       propertyPath: _health
       value: 
       objectReference: {fileID: 1492009222498797549}
+    - target: {fileID: 2217795699128918281, guid: 463e0c4a9da75804991fedc5176b2ac7,
+        type: 3}
+      propertyPath: _useText
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3667857844855408479, guid: 463e0c4a9da75804991fedc5176b2ac7,
         type: 3}
       propertyPath: m_Name

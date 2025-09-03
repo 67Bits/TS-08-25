@@ -1320,7 +1320,7 @@ PrefabInstance:
     - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
         type: 3}
       propertyPath: heightCurve.m_Curve.Array.data[1].time
-      value: 0.4962687
+      value: 0.48880714
       objectReference: {fileID: 0}
     - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
         type: 3}
@@ -1330,7 +1330,7 @@ PrefabInstance:
     - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
         type: 3}
       propertyPath: heightCurve.m_Curve.Array.data[1].value
-      value: 0.011385195
+      value: 0.035677187
       objectReference: {fileID: 0}
     - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
         type: 3}
