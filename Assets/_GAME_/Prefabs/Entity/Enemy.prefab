@@ -3732,8 +3732,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a97b3137324d64b85c119089a1d51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackInterval: 0.3
-  damage: 2
+  attackInterval: 1.3
+  damage: 4
   sensor: {fileID: 4869867955329014528}
   bulletPrefab: {fileID: 2189169309488628842, guid: 6d63f9544fb8f064ab86ed6ec8708a1a,
     type: 3}

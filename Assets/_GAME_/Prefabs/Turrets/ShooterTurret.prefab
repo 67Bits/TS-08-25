@@ -1550,6 +1550,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 861291036267002552, guid: b69ff8ba47bd87946b858663eabcefd6,
         type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 861291036267002552, guid: b69ff8ba47bd87946b858663eabcefd6,
+        type: 3}
+      propertyPath: attackInterval
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 861291036267002552, guid: b69ff8ba47bd87946b858663eabcefd6,
+        type: 3}
       propertyPath: shootPoint.Array.size
       value: 2
       objectReference: {fileID: 0}
