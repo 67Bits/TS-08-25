@@ -229,6 +229,50 @@ CapsuleCollider:
   m_Height: 24.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &54755831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54755833}
+  - component: {fileID: 54755832}
+  m_Layer: 0
+  m_Name: SDK Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &54755832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54755831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cd86312df6cd94c8a2ce7b2670521f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &54755833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54755831}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.12152, y: 6.08327, z: 0.29552}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81079775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,7 +1750,7 @@ PrefabInstance:
     - target: {fileID: 797623364829423829, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 797623364829423829, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
@@ -1716,7 +1760,7 @@ PrefabInstance:
     - target: {fileID: 797623364829423829, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 797623364829423829, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
@@ -1727,7 +1771,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2435534093339237520}
+      objectReference: {fileID: 54755832}
     - target: {fileID: 797623364829423829, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1746,7 +1790,7 @@ PrefabInstance:
     - target: {fileID: 797623364829423829, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetTimeScale
+      value: OnVictory
       objectReference: {fileID: 0}
     - target: {fileID: 797623364829423829, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
@@ -1756,7 +1800,7 @@ PrefabInstance:
     - target: {fileID: 797623364829423829, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: TimeScaleModifier, 67Bits.Time
+      value: TS.SDKManager, TS
       objectReference: {fileID: 0}
     - target: {fileID: 797623364829423829, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
@@ -1916,7 +1960,7 @@ PrefabInstance:
     - target: {fileID: 2808228371586992934, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2808228371586992934, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
@@ -1926,7 +1970,7 @@ PrefabInstance:
     - target: {fileID: 2808228371586992934, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2808228371586992934, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
@@ -1937,7 +1981,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2435534093339237521}
+      objectReference: {fileID: 54755832}
     - target: {fileID: 2808228371586992934, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1956,7 +2000,7 @@ PrefabInstance:
     - target: {fileID: 2808228371586992934, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetTimeScale
+      value: OnDefeat
       objectReference: {fileID: 0}
     - target: {fileID: 2808228371586992934, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
@@ -1966,7 +2010,7 @@ PrefabInstance:
     - target: {fileID: 2808228371586992934, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
       propertyPath: gameEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: TimeScaleModifier, 67Bits.Time
+      value: TS.SDKManager, TS
       objectReference: {fileID: 0}
     - target: {fileID: 2808228371586992934, guid: c04eb3ec34de62747933964c42505488,
         type: 3}
@@ -2242,6 +2286,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
         type: 3}
+      propertyPath: isDebug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 109189693752866364, guid: a065912c819f3ad46b0153ee8c7dbe98,
+        type: 3}
       propertyPath: shopCallsBeforeCombat
       value: 3
       objectReference: {fileID: 0}
@@ -2400,3 +2449,4 @@ SceneRoots:
   - {fileID: 639961936}
   - {fileID: 81079777}
   - {fileID: 293098136}
+  - {fileID: 54755833}
