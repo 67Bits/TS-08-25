@@ -2062,7 +2062,7 @@ MonoBehaviour:
         Mode: 0
         AnimateScaleTarget: {fileID: 8586373386048871117}
         AnimateScaleDuration: 0.2
-        RemapCurveZero: 1
+        RemapCurveZero: 0.01011438
         RemapCurveOne: 0
         Offset: 0
         AnimateX: 1
@@ -5290,6 +5290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _onTakeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509561033576116113, guid: 463e0c4a9da75804991fedc5176b2ac7,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3667857844855408479, guid: 463e0c4a9da75804991fedc5176b2ac7,
         type: 3}
