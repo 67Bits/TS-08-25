@@ -54,7 +54,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   _angle: 360
-  _detectDelay: 0.1
+  _detectDelay: 0.01
 --- !u!114 &861291036267002552
 MonoBehaviour:
   m_ObjectHideFlags: 0

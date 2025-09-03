@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _debug: 1
-  _debugStartHealth: 300
+  _debugStartHealth: 600
   _debugDamageToTake: 0
   _debugHeal: 10
   OnHeal:
@@ -369,6 +369,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 5489672476682383588}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4138287236571292364}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -489,9 +501,9 @@ NavMeshAgent:
   m_GameObject: {fileID: 4823827030376870498}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 8
-  m_Acceleration: 25
+  m_Radius: 0.1
+  m_Speed: 5
+  m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 240
   m_StoppingDistance: 0

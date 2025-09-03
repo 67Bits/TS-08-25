@@ -7585,7 +7585,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   _useAreaBeetweenPoints: 0
   _useRadius: 1
-  _AreaRadius: 10
+  _AreaRadius: 13
   Waves:
   - Spawner: {fileID: 0}
     Name: Wave
@@ -7602,7 +7602,7 @@ MonoBehaviour:
       Prefab: {fileID: 4823827030376870498, guid: 8b08544029711484e92d959f0d9662f8,
         type: 3}
       TargetPoint: {fileID: 0}
-      SpawnAmmount: 5
+      SpawnAmmount: 4
       SpawnChance: 100
       OnSpawnCreated:
         m_PersistentCalls:
