@@ -93,7 +93,7 @@ MonoBehaviour:
   CooldownDuration: 0
   InitialDelay: 0
   CanPlay: 1
-  CanPlayWhileAlreadyPlaying: 1
+  CanPlayWhileAlreadyPlaying: 0
   ChanceToPlay: 100
   FeedbacksIntensity: 1
   Events:
@@ -134,7 +134,8 @@ MonoBehaviour:
   FeedbacksList:
   - rid: 1224781266526142713
   - rid: 1224781266526142723
-  - rid: 1224781266526142791
+  - rid: 1224781270044639502
+  - rid: 1224781270044639503
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   RestoreInitialValuesOnDisable: 0
@@ -230,7 +231,7 @@ MonoBehaviour:
     - rid: 1224781266526142723
       type: {class: MMF_MMSoundManagerSound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 0
+        Active: 1
         UniqueID: -538392198
         Label: MMSoundManager Sound
         OriginalLabel: MMSoundManager Sound
@@ -413,13 +414,13 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
-    - rid: 1224781266526142791
-      type: {class: MMF_Events, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
+    - rid: 1224781270044639502
+      type: {class: MMF_MaterialSetProperty, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
         Active: 1
-        UniqueID: -273998155
-        Label: Unity Events
-        OriginalLabel: Unity Events
+        UniqueID: -420113244
+        Label: Material Set Property
+        OriginalLabel: Material Set Property
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
@@ -487,30 +488,152 @@ MonoBehaviour:
           ButtonText: 
         Owner: {fileID: 7492102026764726779}
         DebugActive: 0
-        PlayEvents:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1398124717113835283}
-              m_TargetAssemblyTypeName: MeshEmissionFlicker, TS
-              m_MethodName: StartEmissionFlicker
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-        StopEvents:
-          m_PersistentCalls:
-            m_Calls: []
-        InitializationEvents:
-          m_PersistentCalls:
-            m_Calls: []
-        ResetEvents:
-          m_PersistentCalls:
-            m_Calls: []
+        TargetRenderer: {fileID: 4238645891194271360}
+        ExtraTargetRenderers:
+        - TargetRenderer: {fileID: 4351573655140522727}
+          MaterialID: 0
+        - TargetRenderer: {fileID: 2155059574960200356}
+          MaterialID: 0
+        - TargetRenderer: {fileID: 2856067342663233799}
+          MaterialID: 0
+        - TargetRenderer: {fileID: 5920107483493026515}
+          MaterialID: 0
+        - TargetRenderer: {fileID: 1075485745850977440}
+          MaterialID: 0
+        - TargetRenderer: {fileID: 1802646869770327112}
+          MaterialID: 0
+        MaterialID: 0
+        PropertyID: _Emission
+        PropertyType: 0
+        NewColor: {r: 1, g: 0, b: 0, a: 1}
+        NewFloat: 1
+        NewInt: 0
+        NewTexture: {fileID: 0}
+        NewOffset: {x: 0, y: 0}
+        NewScale: {x: 0, y: 0}
+        NewVector: {x: 0, y: 0, z: 0, w: 0}
+        InterpolateValue: 1
+        Duration: 0.2
+        InterpolationCurve:
+          MMTweenDefinitionType: 1
+          MMTweenCurve: 4
+          Curve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 0.095829785
+              value: 1.0024147
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 1
+              value: 0
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          Initialized: 0
+          ConditionPropertyName: InterpolateValue
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
+    - rid: 1224781270044639503
+      type: {class: MMF_MMGameEvent, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
+      data:
+        Active: 1
+        UniqueID: 1226572097
+        Label: MMGameEvent
+        OriginalLabel: MMGameEvent
+        ChannelMode: 0
+        Channel: 0
+        MMChannelDefinition: {fileID: 0}
+        Chance: 100
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          PlayCount: 0
+          LimitPlayCount: 0
+          MaxPlayCount: 3
+          SetPlayCountToZeroOnReset: 0
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        AutomatedTargetAcquisition:
+          Mode: 0
+          ChildIndex: 0
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        UseRange: 0
+        RangeDistance: 5
+        UseRangeFalloff: 0
+        RangeFalloff:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        RemapRangeFalloff: {x: 0, y: 1}
+        AutomaticShakerSetupButton:
+          ButtonText: 
+        Owner: {fileID: 7492102026764726779}
+        DebugActive: 0
+        MMGameEventName: PlayerHit
+        IntParameter: 0
+        Vector2Parameter: {x: 0, y: 0}
+        Vector3Parameter: {x: 0, y: 0, z: 0}
+        BoolParameter: 0
+        StringParameter: 
 --- !u!1 &709016957086177757
 GameObject:
   m_ObjectHideFlags: 0
@@ -19138,6 +19261,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 732357079190996512}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &2155059574960200356 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 17c46453378b01543a000e418837210a,
+    type: 3}
+  m_PrefabInstance: {fileID: 732357079190996512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1814230708635504676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19234,6 +19363,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 6596516556818656424}
   m_SourcePrefab: {fileID: 100100000, guid: aa4e99f363d124846a50cba50db47dcd, type: 3}
+--- !u!23 &1075485745850977440 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: aa4e99f363d124846a50cba50db47dcd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1814230708635504676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1579664946577157493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aa4e99f363d124846a50cba50db47dcd,
@@ -20049,6 +20184,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8295442, guid: 644ecb149bc651142a6637ca6bb47dd6, type: 3}
+    - {fileID: 11480852, guid: 644ecb149bc651142a6637ca6bb47dd6, type: 3}
+    - {fileID: 1514043455980711703, guid: 644ecb149bc651142a6637ca6bb47dd6, type: 3}
+    - {fileID: 10811842, guid: 644ecb149bc651142a6637ca6bb47dd6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -20506,6 +20644,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3247979728517147140}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &4238645891194271360 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: b62cbbf415b36ec42b3a2aa5db74d9a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3247979728517147140}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3486735799262358915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20610,6 +20754,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5788989880859462658}
   m_SourcePrefab: {fileID: 100100000, guid: aa54278b33f82664290e3530d353ad52, type: 3}
+--- !u!23 &2856067342663233799 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: aa54278b33f82664290e3530d353ad52,
+    type: 3}
+  m_PrefabInstance: {fileID: 3486735799262358915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4029005058700397160 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aa54278b33f82664290e3530d353ad52,
@@ -21926,6 +22076,12 @@ MonoBehaviour:
     NoiseShiftMin: {x: 0, y: 0, z: 0}
     NoiseShiftMax: {x: 0, y: 0, z: 0}
   DebugWiggleDuration: 2
+--- !u!23 &5920107483493026515 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: aa4e99f363d124846a50cba50db47dcd,
+    type: 3}
+  m_PrefabInstance: {fileID: 5037812479457580631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5108574737126087406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22023,6 +22179,18 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8514705933434580779}
   m_SourcePrefab: {fileID: 100100000, guid: 2abe9d46e59f55d4aa5bc82c17ef16b0, type: 3}
+--- !u!23 &1802646869770327112 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6908808177258466982, guid: 2abe9d46e59f55d4aa5bc82c17ef16b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5108574737126087406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &4351573655140522727 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -394442618593476599, guid: 2abe9d46e59f55d4aa5bc82c17ef16b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5108574737126087406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4715256531825868037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2abe9d46e59f55d4aa5bc82c17ef16b0,

@@ -2273,6 +2273,21 @@ PrefabInstance:
       propertyPath: _ignoreZ
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5356195703146447361, guid: b69ff8ba47bd87946b858663eabcefd6,
+        type: 3}
+      propertyPath: managedReferences[1224781270044639502].TargetRenderer
+      value: 
+      objectReference: {fileID: 1362120669277074}
+    - target: {fileID: 5356195703146447361, guid: b69ff8ba47bd87946b858663eabcefd6,
+        type: 3}
+      propertyPath: managedReferences[1224781270044639502].ExtraTargetRenderers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356195703146447361, guid: b69ff8ba47bd87946b858663eabcefd6,
+        type: 3}
+      propertyPath: managedReferences[1224781270044639502].ExtraTargetRenderers.Array.data[0].TargetRenderer
+      value: 
+      objectReference: {fileID: 1466475477865962401}
     - target: {fileID: 8340805409041754697, guid: b69ff8ba47bd87946b858663eabcefd6,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -3336,6 +3351,18 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7215782866359913577}
   m_SourcePrefab: {fileID: 100100000, guid: f53076dbada137444b1eff891d023a9c, type: 3}
+--- !u!23 &1362120669277074 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4206596302856456935, guid: f53076dbada137444b1eff891d023a9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4207492193815437685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1466475477865962401 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -5891283946437821740, guid: f53076dbada137444b1eff891d023a9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4207492193815437685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2735153873222231512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6948715371760663379, guid: f53076dbada137444b1eff891d023a9c,

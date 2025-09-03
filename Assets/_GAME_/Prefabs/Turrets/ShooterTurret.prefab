@@ -1423,6 +1423,11 @@ PrefabInstance:
       propertyPath: _ignoreZ
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5356195703146447361, guid: b69ff8ba47bd87946b858663eabcefd6,
+        type: 3}
+      propertyPath: managedReferences[1224781270044639502].TargetRenderer
+      value: 
+      objectReference: {fileID: 3021805446043069546}
     - target: {fileID: 8340805409041754697, guid: b69ff8ba47bd87946b858663eabcefd6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1720,6 +1725,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e62b3dc9095f4f40833faf7bb3a59aa, type: 3}
+--- !u!23 &3021805446043069546 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 7e62b3dc9095f4f40833faf7bb3a59aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 4480529310081249518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4153639190915127045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7e62b3dc9095f4f40833faf7bb3a59aa,
