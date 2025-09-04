@@ -4974,6 +4974,39 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &2154688616733413734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7221146917535104314}
+  m_Layer: 9
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7221146917535104314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2154688616733413734}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5904489512416969783}
+  - {fileID: 8684220441449982602}
+  m_Father: {fileID: 3824118088083931290}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3610164719965734651
 GameObject:
   m_ObjectHideFlags: 0
@@ -10134,8 +10167,7 @@ Transform:
   - {fileID: 706429616735059449}
   - {fileID: 7409867014015387691}
   - {fileID: 8586373386048871117}
-  - {fileID: 5904489512416969783}
-  - {fileID: 8684220441449982602}
+  - {fileID: 7221146917535104314}
   - {fileID: 1428050101500444069}
   - {fileID: 7129420546568172261}
   - {fileID: 258006717556071194}
@@ -10393,7 +10425,7 @@ MonoBehaviour:
   ForwardDirection: 1
   TimescaleMode: 0
   Mode: 0
-  TargetTransform: {fileID: 3824118088083931290}
+  TargetTransform: {fileID: 7221146917535104314}
   TargetRectTransform: {fileID: 0}
   ShakeSpeed: 20
   ShakeRange: 30
@@ -11718,10 +11750,10 @@ MonoBehaviour:
         Owner: {fileID: 7613797402702144221}
         DebugActive: 0
         Mode: 0
-        AnimateScaleTarget: {fileID: 3824118088083931290}
+        AnimateScaleTarget: {fileID: 7221146917535104314}
         AnimateScaleDuration: 0.2
-        RemapCurveZero: 0.95
-        RemapCurveOne: 1
+        RemapCurveZero: 1
+        RemapCurveOne: 1.1
         Offset: 0
         AnimateX: 1
         AnimateScaleTweenX:
@@ -12079,7 +12111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5849994014601540981}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.09, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
@@ -12087,7 +12119,7 @@ Transform:
   - {fileID: 2251796238343274471}
   - {fileID: 5129337686915344579}
   - {fileID: 6813826711563315449}
-  m_Father: {fileID: 3824118088083931290}
+  m_Father: {fileID: 7221146917535104314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1277905888780190204
 MonoBehaviour:
@@ -12167,7 +12199,7 @@ Transform:
   - {fileID: 2774404407291085496}
   - {fileID: 4793282867958429661}
   - {fileID: 1023265207473524497}
-  m_Father: {fileID: 3824118088083931290}
+  m_Father: {fileID: 7221146917535104314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2554396636253896888
 MeshFilter:
