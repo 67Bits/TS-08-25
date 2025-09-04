@@ -262,6 +262,9 @@ MonoBehaviour:
   - spawner: {fileID: 1562585533210891775}
     enemyToAmbushPlayer: {fileID: 1366157552986047539, guid: 8b08544029711484e92d959f0d9662f8,
       type: 3}
+  - spawner: {fileID: 566038906}
+    enemyToAmbushPlayer: {fileID: 1366157552986047539, guid: 8b08544029711484e92d959f0d9662f8,
+      type: 3}
   parentEnemy: {fileID: 195763356}
   distanceToPlayer: 15
   OnEnemyFacePlayerStart:
@@ -468,6 +471,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2435534093339237516}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &566038906 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3965902221709716060, guid: 4f191075184f5c74399b102fb1e3c242,
+    type: 3}
+  m_PrefabInstance: {fileID: 1562585533210891774}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d71903938063b84890312d2ee01b809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &639961934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1494,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895578389}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1979304494 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1277905888780190204, guid: 4f191075184f5c74399b102fb1e3c242,
+    type: 3}
+  m_PrefabInstance: {fileID: 1562585533210891774}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a722a27877b140b448718af223f76f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2053271103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,11 +1558,16 @@ PrefabInstance:
     - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
@@ -1545,7 +1577,17 @@ PrefabInstance:
       objectReference: {fileID: 2435534093339237518}
     - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1979304494}
+    - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
@@ -1555,13 +1597,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: StopAllTurrets
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: GameEvents, 67Bits
       objectReference: {fileID: 0}
     - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Turret.TurretStack, Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492009222498797549, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554117026245225286, guid: 4f191075184f5c74399b102fb1e3c242,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3464362633811267571, guid: 4f191075184f5c74399b102fb1e3c242,
         type: 3}

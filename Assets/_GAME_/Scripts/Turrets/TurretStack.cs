@@ -22,6 +22,18 @@ namespace Turret
         [SerializeField] private List<TurretSensor> turretList = new List<TurretSensor>();
         [SerializeField] private UnityEvent OnAddTower;
 
+        public void StopAllTurrets()
+        {
+            foreach (var turret in turretList)
+            {
+                if (turret != null)
+                {
+                    turret.enabled = false;
+                    turret.transform.GetComponent<TurretAttack>().enabled = false;
+                }
+            }
+        }
+
         [Button]
         public void AddTurret(TurretSensor turretSensor)
         {
