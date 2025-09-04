@@ -349,7 +349,7 @@ Material:
     - _NormalsUVType: 0
     - _OcclusionStrength: 1
     - _OutlineMode: 8
-    - _OutlineThickness: 2
+    - _OutlineThickness: 1.5
     - _OutlineType: 2
     - _OutlineWidth: 1
     - _Parallax: 0.005
@@ -466,7 +466,7 @@ Material:
     - _HitColor: {r: 1, g: 1, b: 1, a: 1}
     - _HologramColor: {r: 1.25, g: 2.8, b: 6.8, a: 1}
     - _HologramLineDirection: {r: 0, g: 1, b: 0, a: 0}
-    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColorVertex: {r: 0.09529694, g: 0, b: 0.49056602, a: 1}
     - _RimColor: {r: 0, g: 0.7868185, b: 1, a: 0.5}
     - _RimDir: {r: 0, g: 0, b: 1, a: 1}

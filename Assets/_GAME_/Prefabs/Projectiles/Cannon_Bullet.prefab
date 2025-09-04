@@ -1046,6 +1046,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5f1ce40a3bff4a149993ef4454c3a7a5,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a94e134d9ae2e34468b8bc50013ac121, type: 2}
     - target: {fileID: 919132149155446097, guid: 5f1ce40a3bff4a149993ef4454c3a7a5,
         type: 3}
       propertyPath: m_Name
@@ -1301,6 +1306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cannon_Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531785326685515084, guid: 73fad25195bc15944875614d494668f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2189169309488628842, guid: 73fad25195bc15944875614d494668f0,
         type: 3}
