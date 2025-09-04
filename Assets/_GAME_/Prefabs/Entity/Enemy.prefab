@@ -11626,7 +11626,7 @@ MonoBehaviour:
         MaterialID: 0
         PropertyID: _Emission
         PropertyType: 0
-        NewColor: {r: 1.4980394, g: 1.4980394, b: 1.4980394, a: 1}
+        NewColor: {r: 0.9221513, g: 0.9221513, b: 0.9221513, a: 1}
         NewFloat: 1
         NewInt: 0
         NewTexture: {fileID: 0}
@@ -11634,7 +11634,7 @@ MonoBehaviour:
         NewScale: {x: 0, y: 0}
         NewVector: {x: 0, y: 0, z: 0, w: 0}
         InterpolateValue: 1
-        Duration: 0.25
+        Duration: 0.1
         InterpolationCurve:
           MMTweenDefinitionType: 1
           MMTweenCurve: 4
@@ -11651,8 +11651,8 @@ MonoBehaviour:
               inWeight: 0
               outWeight: 0
             - serializedVersion: 3
-              time: 0.07500154
-              value: 0.9951706
+              time: 0.041668713
+              value: 0.5769043
               inSlope: 0
               outSlope: 0
               tangentMode: 0
@@ -11662,11 +11662,11 @@ MonoBehaviour:
             - serializedVersion: 3
               time: 1
               value: 0
-              inSlope: 0
-              outSlope: 0
+              inSlope: -0.6617503
+              outSlope: -0.6617503
               tangentMode: 0
               weightedMode: 0
-              inWeight: 0
+              inWeight: 0.14782639
               outWeight: 0
             m_PreInfinity: 2
             m_PostInfinity: 2
