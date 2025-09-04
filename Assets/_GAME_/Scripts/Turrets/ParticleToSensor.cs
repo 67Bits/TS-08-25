@@ -15,6 +15,16 @@ namespace Turret
         {
             if (_sensor == null || _particleSystem == null) return;
 
+            if (!_sensor.enabled)
+            {
+                if (_particleSystem.isPlaying)
+                {
+                    _particleSystem.Stop();
+                    onParticleStop?.Invoke();
+                }
+                return;
+            }
+
             if (_sensor.CurrentTarget == null)
             {
                 if (_particleSystem.isPlaying)
