@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Flame
   Description: 
-  Icon: {fileID: 21300000, guid: cff137be7b1cc43e29d430220047f3bb, type: 3}
+  Icon: {fileID: 21300000, guid: 60b39c19cbd297d48b13798f0b860fe7, type: 3}
   Price: 0
   TurretPrefab: {fileID: 8243849093003104868, guid: 7d22b2c0409ca04429fe006c151d4e76,
     type: 3}

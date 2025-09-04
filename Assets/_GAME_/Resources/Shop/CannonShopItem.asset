@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Cannon
   Description: 
-  Icon: {fileID: 21300000, guid: 16a86a7f581fc4dfb953e0df8ad3ecac, type: 3}
+  Icon: {fileID: 21300000, guid: 02fa4cbfea8f01e4598ac1e4c8f8ee83, type: 3}
   Price: 0
   TurretPrefab: {fileID: 6589969650375879734, guid: a1e439091e2e6fe419b2034cda2c80ec,
     type: 3}
