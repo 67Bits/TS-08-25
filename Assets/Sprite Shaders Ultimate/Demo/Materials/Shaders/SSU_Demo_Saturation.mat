@@ -13,6 +13,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - ETC1_EXTERNAL_ALPHA
+  - _ENABLEHUE_ON
   - _ENABLESATURATION_ON
   - _SHADERFADING_NONE
   - _SHADERSPACE_UV
@@ -242,7 +243,7 @@ Material:
     - _EnableGlitch: 0
     - _EnableHalftone: 0
     - _EnableHologram: 0
-    - _EnableHue: 0
+    - _EnableHue: 1
     - _EnableInkSpread: 0
     - _EnableInnerOutline: 0
     - _EnableMetal: 0
@@ -336,7 +337,7 @@ Material:
     - _HologramLineGap: 3
     - _HologramLineSpeed: 0.01
     - _HologramMinAlpha: 0.2
-    - _Hue: 0
+    - _Hue: -0.02
     - _InkSpreadContrast: 2
     - _InkSpreadDistance: 3
     - _InkSpreadFade: 1
@@ -393,7 +394,7 @@ Material:
     - _RecolorRGBYCPTextureToggle: 0
     - _RectHeight: 100
     - _RectWidth: 100
-    - _Saturation: 0
+    - _Saturation: 1.5
     - _ScreenTilingPixelsPerUnit: 100
     - _ScreenWidthUnits: 10
     - _ShaderFading: 0
@@ -664,3 +665,4 @@ Material:
     - _WorldTilingOffset: {r: 0, g: 0, b: 0, a: 0}
     - _WorldTilingScale: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

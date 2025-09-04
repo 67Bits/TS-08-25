@@ -9564,7 +9564,6 @@ GameObject:
   - component: {fileID: 1492009222498797549}
   - component: {fileID: 4510047125484626165}
   - component: {fileID: 7085174134955037567}
-  - component: {fileID: 1398124717113835283}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -9684,21 +9683,6 @@ MonoBehaviour:
   _healingTextPrefab: {fileID: 3320257392556193219, guid: 87462851cc30495488e35c767e852fd3,
     type: 3}
   _spawnPoint: {fileID: 2418125255337937790}
---- !u!114 &1398124717113835283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4823827030376870498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd08194cb8cd9e049843e957b6f7abaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flickerCount: 1
-  flickerInterval: 0.2
-  emissionIntensity: 10
 --- !u!1 &4853455899863069435
 GameObject:
   m_ObjectHideFlags: 0
